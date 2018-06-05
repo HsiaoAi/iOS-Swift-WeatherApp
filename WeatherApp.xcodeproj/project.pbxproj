@@ -18,6 +18,10 @@
 		876E32DF20C6E0D7003CFD79 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		876E32E220C6E0D7003CFD79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		876E32E420C6E0D7003CFD79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		876E32F320C6E48C003CFD79 /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
+		876E32F420C6E48C003CFD79 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		876E32F520C6E48C003CFD79 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		876E32F620C6E48C003CFD79 /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 		876E32EA20C6E1A1003CFD79 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				876E32F720C6E495003CFD79 /* Font */,
 				876E32EB20C6E1E9003CFD79 /* Storyboards */,
 				876E32DF20C6E0D7003CFD79 /* Image.xcassets */,
 			);
@@ -96,6 +101,17 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		876E32F720C6E495003CFD79 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				876E32F420C6E48C003CFD79 /* ProximaNova-Bold.otf */,
+				876E32F620C6E48C003CFD79 /* ProximaNova-Light.otf */,
+				876E32F520C6E48C003CFD79 /* ProximaNova-Regular.otf */,
+				876E32F320C6E48C003CFD79 /* ProximaNova-Semibold.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
