@@ -10,6 +10,10 @@
 		876E32D920C6E0D7003CFD79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876E32D820C6E0D7003CFD79 /* AppDelegate.swift */; };
 		876E32E020C6E0D7003CFD79 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 876E32DF20C6E0D7003CFD79 /* Image.xcassets */; };
 		876E32E320C6E0D7003CFD79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876E32E120C6E0D7003CFD79 /* LaunchScreen.storyboard */; };
+		876E32FC20C6EB68003CFD79 /* TabBarItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876E32FB20C6EB68003CFD79 /* TabBarItemType.swift */; };
+		876E32FE20C6F075003CFD79 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876E32FD20C6F075003CFD79 /* TabBarController.swift */; };
+		876E330120C6F33B003CFD79 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876E330020C6F33B003CFD79 /* UIColorExtensions.swift */; };
+		876E330320C6F452003CFD79 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876E330220C6F452003CFD79 /* TabBarItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		876E32F420C6E48C003CFD79 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
 		876E32F520C6E48C003CFD79 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
 		876E32F620C6E48C003CFD79 /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
+		876E32FB20C6EB68003CFD79 /* TabBarItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemType.swift; sourceTree = "<group>"; };
+		876E32FD20C6F075003CFD79 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		876E330020C6F33B003CFD79 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		876E330220C6F452003CFD79 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +62,14 @@
 		876E32D720C6E0D7003CFD79 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				876E32FF20C6F323003CFD79 /* Extentions */,
+				876E32FA20C6EA66003CFD79 /* TabBar */,
 				876E32D820C6E0D7003CFD79 /* AppDelegate.swift */,
-				876E32F020C6E236003CFD79 /* ViewModels */,
-				876E32EE20C6E223003CFD79 /* Views */,
-				876E32EA20C6E1A1003CFD79 /* Resources */,
-				876E32E420C6E0D7003CFD79 /* Info.plist */,
 				876E32EC20C6E20D003CFD79 /* Models */,
+				876E32EE20C6E223003CFD79 /* Views */,
+				876E32F020C6E236003CFD79 /* ViewModels */,
+				876E32EA20C6E1A1003CFD79 /* Resources */,
+				876E32F820C6EA3E003CFD79 /* SupportingFiles */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -112,6 +122,32 @@
 				876E32F320C6E48C003CFD79 /* ProximaNova-Semibold.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		876E32F820C6EA3E003CFD79 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				876E32E420C6E0D7003CFD79 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		876E32FA20C6EA66003CFD79 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				876E32FD20C6F075003CFD79 /* TabBarController.swift */,
+				876E330220C6F452003CFD79 /* TabBarItem.swift */,
+				876E32FB20C6EB68003CFD79 /* TabBarItemType.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		876E32FF20C6F323003CFD79 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				876E330020C6F33B003CFD79 /* UIColorExtensions.swift */,
+			);
+			name = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876E32FE20C6F075003CFD79 /* TabBarController.swift in Sources */,
+				876E32FC20C6EB68003CFD79 /* TabBarItemType.swift in Sources */,
+				876E330320C6F452003CFD79 /* TabBarItem.swift in Sources */,
 				876E32D920C6E0D7003CFD79 /* AppDelegate.swift in Sources */,
+				876E330120C6F33B003CFD79 /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DTTYHBEAZE;
-				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WeatherApp/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hsiaoai.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -331,7 +371,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DTTYHBEAZE;
-				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WeatherApp/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hsiaoai.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

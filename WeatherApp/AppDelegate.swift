@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        initRootViewController()
+        initTabBarViewController()
         
         return true
     }
@@ -46,12 +46,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate {
-    func initRootViewController() {
+    
+    func initTabBarViewController() {
+        let tabBarItemTypes: [TabBarItemType] = [.today, .forecast]
         let window = UIWindow(frame: UIScreen.main.bounds)
-        let rootViewController = UIViewController()
-        window.rootViewController = rootViewController
+        let tabBarViewController = TabBarController(itemTypes: tabBarItemTypes)
+        window.rootViewController = tabBarViewController
         window.makeKeyAndVisible()
         self.window = window
     }
+    
 }
 
