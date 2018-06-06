@@ -14,6 +14,7 @@
 		876E32FE20C6F075003CFD79 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876E32FD20C6F075003CFD79 /* TabBarController.swift */; };
 		876E330120C6F33B003CFD79 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876E330020C6F33B003CFD79 /* UIColorExtensions.swift */; };
 		876E330320C6F452003CFD79 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876E330220C6F452003CFD79 /* TabBarItem.swift */; };
+		876E330620C779A5003CFD79 /* ColorfulNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876E330520C779A5003CFD79 /* ColorfulNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		876E32FD20C6F075003CFD79 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		876E330020C6F33B003CFD79 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		876E330220C6F452003CFD79 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		876E330520C779A5003CFD79 /* ColorfulNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +64,8 @@
 		876E32D720C6E0D7003CFD79 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				876E32FF20C6F323003CFD79 /* Extentions */,
-				876E32FA20C6EA66003CFD79 /* TabBar */,
 				876E32D820C6E0D7003CFD79 /* AppDelegate.swift */,
+				876E32FF20C6F323003CFD79 /* Extentions */,
 				876E32EC20C6E20D003CFD79 /* Models */,
 				876E32EE20C6E223003CFD79 /* Views */,
 				876E32F020C6E236003CFD79 /* ViewModels */,
@@ -102,6 +103,8 @@
 		876E32EE20C6E223003CFD79 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				876E330420C77957003CFD79 /* Navigation */,
+				876E32FA20C6EA66003CFD79 /* TabBar */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,6 +151,14 @@
 				876E330020C6F33B003CFD79 /* UIColorExtensions.swift */,
 			);
 			name = Extentions;
+			sourceTree = "<group>";
+		};
+		876E330420C77957003CFD79 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				876E330520C779A5003CFD79 /* ColorfulNavigationController.swift */,
+			);
+			name = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +235,7 @@
 				876E32FE20C6F075003CFD79 /* TabBarController.swift in Sources */,
 				876E32FC20C6EB68003CFD79 /* TabBarItemType.swift in Sources */,
 				876E330320C6F452003CFD79 /* TabBarItem.swift in Sources */,
+				876E330620C779A5003CFD79 /* ColorfulNavigationController.swift in Sources */,
 				876E32D920C6E0D7003CFD79 /* AppDelegate.swift in Sources */,
 				876E330120C6F33B003CFD79 /* UIColorExtensions.swift in Sources */,
 			);

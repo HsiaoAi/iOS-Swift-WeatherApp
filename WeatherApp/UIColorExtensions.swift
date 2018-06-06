@@ -14,6 +14,7 @@ extension UIColor {
         static let tabBarItemSelectedColor = UIColor(red: 47 / 255.0, green: 145 / 255.0, blue: 255 / 255.0, alpha: 1.0)
         
         static let tabBarItemUnSelectedColor = UIColor(red: 69 / 255.0, green: 69 / 255.0, blue: 69 / 255.0, alpha: 1.0)
+        static let navigationBarTitleColor = UIColor(red: 51 / 255.0, green: 51 / 255.0, blue: 51 / 255.0, alpha: 1.0)
     }
 }
 
