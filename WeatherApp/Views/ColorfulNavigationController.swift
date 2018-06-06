@@ -22,6 +22,7 @@ class ColorfulNavigationController: UINavigationController {
     
     // MARK: Set Up
     func setUpNavigationBar() {
+        
         backgroundImage = #imageLiteral(resourceName: "ColorfulLineNavigationBar")
         backgroundImageView.image = backgroundImage
         view.addSubview(backgroundImageView)
@@ -32,7 +33,8 @@ class ColorfulNavigationController: UINavigationController {
         backgroundImageView.bottomAnchor.constraint(equalTo: navigationBar.bottomAnchor).isActive = true
         navigationBar.isTranslucent = false
         navigationBar.barTintColor = .white
-        navigationBar.tintColor = UIColor.Custom.navigationBarTitleColor
+        navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.Custom.navigationBarTitleColor]
+        
     }
 
 }
