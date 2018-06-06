@@ -6,5 +6,9 @@ target 'WeatherApp' do
   use_frameworks!
 
   # Pods for WeatherApp
+  pod 'Alamofire', '~> 4.7'
+  pod 'SDWebImage'
+  pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
+  pod 'ReachabilitySwift'
 
 end
