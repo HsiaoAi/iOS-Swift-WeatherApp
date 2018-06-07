@@ -13,9 +13,8 @@ class TodayTopView: UIView {
     let nibName = "TodayTopView"
     var contentView: UIView?
     
-    @IBOutlet weak var imageToLocationVerticalContraint: NSLayoutConstraint!
     
-    @IBOutlet weak var locationToConditionVerticalContraint: NSLayoutConstraint!
+    @IBOutlet weak var centerViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var conditionImageView: UIImageView!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var locationImageView: UIImageView!
@@ -45,20 +44,14 @@ class TodayTopView: UIView {
     func setUpView() {
         conditionImageView.image = #imageLiteral(resourceName: "ForecastTabBarItem")
         if DeviceType.phone4OrLess || DeviceType.phoneSE {
-        
-            imageToLocationVerticalContraint.constant = 9
-            locationToConditionVerticalContraint.constant = 21
-        
+            
+            centerViewHeightConstraint.constant = 31
         } else if DeviceType.phone8 || DeviceType.phoneX {
             
-            imageToLocationVerticalContraint.constant = 5
-            
-            locationToConditionVerticalContraint.constant = 10
-            
+            centerViewHeightConstraint.constant = 37
         } else {
             
-            imageToLocationVerticalContraint.constant = 12
-            locationToConditionVerticalContraint.constant = 16
+            centerViewHeightConstraint.constant = 50
         }
         
     }

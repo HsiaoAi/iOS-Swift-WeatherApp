@@ -1,5 +1,5 @@
 //
-//  NotificationCenterExtensions.swift
+//  NotificationExtensions.swift
 //  WeatherApp
 //
 //  Created by HsiaoAi on 2018/6/6.
@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+extension Notification.Name {
+    static let networkDisconnected = Notification.Name("networkDisconnected")
+    static let appWillEnterForeground = Notification.Name("appWillEnterForeground")
+}

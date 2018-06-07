@@ -27,10 +27,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HXh-kp-8ve" userLabel="TopView">
-                                <rect key="frame" x="0.0" y="20" width="320" height="216"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="230.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PZc-yB-hVu" customClass="TodayTopView" customModule="WeatherApp" customModuleProvider="target">
-                                        <rect key="frame" x="16.5" y="25" width="288" height="166"/>
+                                        <rect key="frame" x="16.5" y="31.5" width="288" height="166"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="166" id="qA4-MQ-9eA"/>
                                         </constraints>
@@ -43,14 +43,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3w5-dP-k5G" userLabel="Seperator">
-                                <rect key="frame" x="100.5" y="235" width="119" height="1"/>
+                                <rect key="frame" x="100.5" y="249.5" width="119" height="1"/>
                                 <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="hgx-MS-pk3"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FUz-hM-y2a">
-                                <rect key="frame" x="0.0" y="236" width="320" height="166"/>
+                                <rect key="frame" x="0.0" y="250.5" width="320" height="166"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WKv-bk-Zag">
                                         <rect key="frame" x="24" y="24" width="272" height="30"/>
@@ -156,17 +156,17 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oe9-yq-ZRi" userLabel="Seperator">
-                                <rect key="frame" x="100.5" y="401" width="119" height="1"/>
+                                <rect key="frame" x="100.5" y="415.5" width="119" height="1"/>
                                 <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="nIh-xv-Eap"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cU7-gd-YjW">
-                                <rect key="frame" x="0.0" y="402" width="320" height="78"/>
+                                <rect key="frame" x="0.0" y="416.5" width="320" height="63.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KuB-vH-zKO">
-                                        <rect key="frame" x="135.5" y="22.5" width="49" height="33"/>
+                                        <rect key="frame" x="135.5" y="14.5" width="49" height="33"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
                                         <state key="normal" title="Share">
                                             <color key="titleColor" red="1" green="0.53725490196078429" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -179,6 +179,10 @@
                                     <constraint firstItem="KuB-vH-zKO" firstAttribute="centerY" secondItem="cU7-gd-YjW" secondAttribute="centerY" id="hr1-lC-F9b"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIR-MD-8tx" userLabel="NoDataView" customClass="NoDataView" customModule="WeatherApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -190,26 +194,32 @@
                             <constraint firstItem="vh4-yj-26J" firstAttribute="bottom" secondItem="cU7-gd-YjW" secondAttribute="bottom" id="Ha3-7Q-KgL"/>
                             <constraint firstItem="vh4-yj-26J" firstAttribute="trailing" secondItem="FUz-hM-y2a" secondAttribute="trailing" id="KJq-Vy-lGf"/>
                             <constraint firstItem="HXh-kp-8ve" firstAttribute="leading" secondItem="vh4-yj-26J" secondAttribute="leading" id="RaL-6c-y5u"/>
+                            <constraint firstItem="SIR-MD-8tx" firstAttribute="bottom" secondItem="vh4-yj-26J" secondAttribute="bottom" id="Vc3-ej-E46"/>
                             <constraint firstItem="Oe9-yq-ZRi" firstAttribute="centerX" secondItem="5wN-V6-8BM" secondAttribute="centerX" id="Vv1-SZ-eCZ"/>
                             <constraint firstItem="3w5-dP-k5G" firstAttribute="centerX" secondItem="5wN-V6-8BM" secondAttribute="centerX" id="dck-0g-sbq"/>
+                            <constraint firstItem="SIR-MD-8tx" firstAttribute="leading" secondItem="vh4-yj-26J" secondAttribute="leading" id="fiA-nv-hdP"/>
                             <constraint firstItem="FUz-hM-y2a" firstAttribute="top" secondItem="HXh-kp-8ve" secondAttribute="bottom" id="gdn-hU-mo4"/>
                             <constraint firstItem="3w5-dP-k5G" firstAttribute="bottom" secondItem="HXh-kp-8ve" secondAttribute="bottom" id="jkA-PC-VF0"/>
                             <constraint firstItem="HXh-kp-8ve" firstAttribute="top" secondItem="vh4-yj-26J" secondAttribute="top" id="po0-Sd-QCq"/>
-                            <constraint firstItem="HXh-kp-8ve" firstAttribute="height" secondItem="5wN-V6-8BM" secondAttribute="height" multiplier="300:667" id="r4g-ug-HH1"/>
+                            <constraint firstItem="HXh-kp-8ve" firstAttribute="height" secondItem="5wN-V6-8BM" secondAttribute="height" multiplier="320:667" id="r4g-ug-HH1"/>
                             <constraint firstItem="3w5-dP-k5G" firstAttribute="width" secondItem="5wN-V6-8BM" secondAttribute="width" multiplier="140:375" id="rkd-QO-ehB"/>
+                            <constraint firstItem="SIR-MD-8tx" firstAttribute="trailing" secondItem="vh4-yj-26J" secondAttribute="trailing" id="roV-qc-w05"/>
                             <constraint firstItem="vh4-yj-26J" firstAttribute="trailing" secondItem="HXh-kp-8ve" secondAttribute="trailing" id="t1N-Fg-HRb"/>
                             <constraint firstItem="FUz-hM-y2a" firstAttribute="leading" secondItem="vh4-yj-26J" secondAttribute="leading" id="z1q-md-Vrx"/>
+                            <constraint firstItem="SIR-MD-8tx" firstAttribute="top" secondItem="vh4-yj-26J" secondAttribute="top" id="zKF-w7-bkc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vh4-yj-26J"/>
                     </view>
                     <connections>
                         <outlet property="conditionItemLeadingContraint" destination="f1h-Ed-udl" id="jEe-TP-acf"/>
                         <outlet property="humidityValueLabel" destination="0XC-IR-xMt" id="Onk-m8-Y2W"/>
+                        <outlet property="nodataView" destination="SIR-MD-8tx" id="vGu-Vc-QZ1"/>
                         <outlet property="precipitationValueLabel" destination="axP-UC-1Tf" id="bjv-9q-Hgl"/>
                         <outlet property="pressureLabel" destination="wKj-bl-AeN" id="iMt-AJ-ksa"/>
                         <outlet property="shareButton" destination="KuB-vH-zKO" id="pqe-Zd-y6N"/>
                         <outlet property="todayTopView" destination="PZc-yB-hVu" id="yes-ge-Dyb"/>
                         <outlet property="todayTopViewHeightConstraint" destination="qA4-MQ-9eA" id="FwO-3d-ov1"/>
+                        <outlet property="topViewHeightContraint" destination="po0-Sd-QCq" id="s1A-1u-MoV"/>
                         <outlet property="windDirectionLabel" destination="kmC-Gj-JTA" id="9rw-Db-cRT"/>
                         <outlet property="windSpeedLabel" destination="8Iz-eZ-BFI" id="s7h-QP-S6I"/>
                     </connections>

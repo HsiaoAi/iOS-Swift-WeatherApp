@@ -10,12 +10,46 @@ import UIKit
 
 class NoDataView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    let nibName = "NoDataView"
+    var contentView: UIView?
+    
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var actionButton: UIButton!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
     }
-    */
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        guard let view = loadViewFromNib() else { return }
+        view.frame = self.bounds
+        self.addSubview(view)
+        contentView = view
+    }
+    
+    func loadViewFromNib() -> UIView? {
+        let bundle = Bundle(for: type(of: self))
+        let nib = UINib(nibName: nibName, bundle: bundle)
+        return nib.instantiate(withOwner: self, options: nil).first as? UIView
+    }
+    
+    override func layoutSubviews() {
+        setUpView()
+    }
+    
+    func setUpView() {
+        actionButton.layer.cornerRadius = actionButton.bounds.size.height / 2
+        actionButton.clipsToBounds = true
+    }
+    
+    func setUpView(with type: NoDataType) {
+        imageView.image = type.image
+        descriptionLabel.text = type.description
+        actionButton.setTitle(type.buttonTitle, for: .normal)
+    }
 
 }
+
