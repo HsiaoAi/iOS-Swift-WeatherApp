@@ -26,6 +26,7 @@ class TodayViewController: UIViewController {
     @IBOutlet weak var noInternetView: NoDataView!
     @IBOutlet weak var noLocationView: NoDataView!
     @IBOutlet var weatherIconImageViews: [UIImageView]!
+    @IBOutlet weak var bottomView: UIView!
     
     
     // MARK: Property - ViewModel
@@ -42,16 +43,16 @@ class TodayViewController: UIViewController {
     // MARK : Set Up
     func setUpView() {
 
-        self.title = "Today"
-        self.noLocationView.isHidden = false
-        self.noLocationView.actionButton.addTarget(self, action: #selector(self.goToSettings), for: .touchUpInside)
-        self.noLocationView.setUpView(with: .noLocation)
+        title = "Today"
+        noLocationView.isHidden = false
+        noLocationView.setUpView(with: .noLocation)
+        noLocationView.actionButton.addTarget(self, action: #selector(self.goToSettings), for: .touchUpInside)
         
-        self.noInternetView.isHidden = false
-        self.noInternetView.actionButton.addTarget(self, action: #selector(self.tapReload), for: .touchUpInside)
-        self.noInternetView.setUpView(with: .noInternet)
+        noInternetView.isHidden = false
+        noInternetView.actionButton.addTarget(self, action: #selector(self.tapReload), for: .touchUpInside)
+        noInternetView.setUpView(with: .noInternet)
 
-        
+        shareButton.addTarget(self, action: #selector(tapShareButton), for: .touchUpInside)
         if DeviceType.phoneSE || DeviceType.phone4OrLess {
             todayTopViewHeightConstraint.constant = 165
             conditionItemLeadingContraint.constant = 30.5
@@ -117,7 +118,6 @@ class TodayViewController: UIViewController {
             
             let imageTintColor: UIColor = (weatherModel.dayType == .day) ? UIColor.Custom.weatherIconDayColor : UIColor.Custom.weatherIconNightColor
             
-            
             // _ = self.weatherIconImageViews.map { $0.tintColor = imageTintColor }
         }
     }
@@ -144,5 +144,29 @@ extension TodayViewController {
     
     @objc func goToSettings() {
         viewModel.goToAppSettingsForLocation()
+    }
+    
+    @objc func tapShareButton() {
+        screenShotMethod()
+//        let actionViewController = UIActivityViewController(activityItems: [], applicationActivities: nil)
+//        //        if let popoverPresentationController = actionViewController.popoverPresentationController {
+//        //            popoverPresentationController.barButtonItem = (sender as! UIBarButtonItem)
+//        //        }
+//        self.present(actionViewController, animated: true, completion: nil)
+    }
+    
+    func screenShotMethod() {
+        let layer = UIApplication.shared.keyWindow!.layer
+        let scale = UIScreen.main.scale
+        let width = view.frame.size.width
+        let height = layer.frame.height - bottomView.bounds.height 
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: width, height: height), false, scale);
+        guard let context = UIGraphicsGetCurrentContext() else {return}
+        layer.render(in:context)
+        let screenshotImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        if let image = screenshotImage {
+            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil )
+        }
     }
 }

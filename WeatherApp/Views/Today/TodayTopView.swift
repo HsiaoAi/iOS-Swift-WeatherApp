@@ -42,7 +42,7 @@ class TodayTopView: UIView {
     }
     
     func setUpView() {
-        conditionImageView.image = #imageLiteral(resourceName: "ForecastTabBarItem")
+
         if DeviceType.phone4OrLess || DeviceType.phoneSE {
             
             centerViewHeightConstraint.constant = 31

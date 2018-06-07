@@ -30,6 +30,14 @@ class NoDataView: UIView {
         contentView = view
     }
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        guard let view = loadViewFromNib() else { return }
+        view.frame = self.bounds
+        self.addSubview(view)
+        contentView = view
+    }
+    
     func loadViewFromNib() -> UIView? {
         let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: nibName, bundle: bundle)
