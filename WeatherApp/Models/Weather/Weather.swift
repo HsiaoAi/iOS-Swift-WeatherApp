@@ -12,10 +12,10 @@ struct WeatherResult: Codable {
     let weather: [Weather]
     let main: MainWeather
     let wind: Wind
-    let visibility: Int
+    var visibility: Int?
     let system: System
     let cityName: String
-    var rain: [String: Double]?
+    var rain: Rain?
     
     private enum CodingKeys: String, CodingKey {
         case weather, main, wind, visibility, rain
@@ -65,13 +65,14 @@ struct Rain: Codable {
 
 struct System: Codable {
     let country: String
-    lazy var countryFullName: String? = {
-        return getContryFullName(with: self.country)
-    }()
+    let sunrise: Double
+    let sunset: Double
+    var countryFullName: String? {
+        return getContryFullName(with: country)
+    }
 }
 
 func getWindDirectionAbbr(with degree: Double) -> String? {
-    
     if (degree >= 0 && degree < 22.5) || degree == 360 {
         return "N"
     } else if degree >= 22.5 && degree < 45 {
@@ -107,7 +108,6 @@ func getWindDirectionAbbr(with degree: Double) -> String? {
     } else {
         return nil
     }
-    
 }
 
 

@@ -14,6 +14,7 @@ class TodayViewModel: NSObject {
     // MARK: Property - Models
     private let networkManager: NetworkConnectionManager = NetworkConnectionManager.shared
     private let locationManager: CLLocationManager = CLLocationManager()
+    private let weatherManager: WeatherManager = WeatherManager.shared
     
     var currentLocation: CLLocation? {
         didSet {
@@ -21,16 +22,28 @@ class TodayViewModel: NSObject {
         }
     }
     
-    // MARK: Property - Flags
-    var noDataType: NoDataType? = nil {
+    var currentWeatherModel: CurrentWeatherModel? {
         didSet {
-            self.hangleNodataView?(noDataType)
+            self.showWeatherReslut?()
+        }
+    }
+    
+    // MARK: Property - Flags
+    var isGetLocation: Bool = false {
+        didSet {
+            self.updateLocationStatus?()
+        }
+    }
+    
+    var isConnectedNetwork: Bool = false {
+        didSet {
+            self.updateInternetStatus?()
         }
     }
     
     var isLoading: Bool = false {
         didSet {
-            // TODO: Show loading view
+            self.updateLoadingStatus?()
         }
     }
     
@@ -47,7 +60,12 @@ class TodayViewModel: NSObject {
     }
     
     // MARK: Property - Closures
-    var hangleNodataView: ((_ noDataType: NoDataType?) -> Void)?
+    var showWeatherReslut: (() -> Void)?
+    var updateLoadingStatus: (() -> Void)?
+    var updateInternetStatus: (() -> Void)?
+    var updateLocationStatus: (() -> Void)?
+
+
     
     
     // MARK: Init
@@ -56,7 +74,7 @@ class TodayViewModel: NSObject {
         setUp()
         NotificationCenter.default.addObserver(
             self,
-            selector: #selector(getUserCurrentLocation),
+            selector: #selector(checkLocationAuthorization),
             name: .appWillEnterForeground,
             object: nil
         )
@@ -75,26 +93,20 @@ class TodayViewModel: NSObject {
     }
     
     // MARK: Check location access
-    func checkLocationAuthorization() {
+    @objc func checkLocationAuthorization() {
         
         let status = CLLocationManager.authorizationStatus()
         switch status {
         case .authorizedAlways, .authorizedWhenInUse:
+            self.isGetLocation = true
             locationManager.startUpdatingLocation()
-            self.noDataType = nil
         case .denied, .restricted:
-            self.noDataType = .noLocation
+            self.isGetLocation = false
         case .notDetermined:
+            self.isGetLocation = false
             locationManager.requestWhenInUseAuthorization()
         }
         
-    }
-    
-    
-    // MARK: Get user current location
-    @objc func getUserCurrentLocation() {
-        
-
     }
     
     func goToAppSettingsForLocation() {
@@ -102,7 +114,7 @@ class TodayViewModel: NSObject {
         
         UIApplication.shared.open(url!, options: [:]) { isOpen in
             if isOpen {
-                self.getUserCurrentLocation()
+                self.checkLocationAuthorization()
             } else {
                 NSLog("Please go to settings")
             }
@@ -110,24 +122,41 @@ class TodayViewModel: NSObject {
     }
     
     func fetchWeatherInformation() {
+        
         guard let location = self.currentLocation else {
-            self.getUserCurrentLocation()
+            isGetLocation = false
+            self.checkLocationAuthorization()
             return
         }
-        print(location.altitude)
-    }
-    
-    // MARK: Check connection
-    func checkNetworkConnection() {
-        self.networkManager.isReachable { (_ , isReachable) in
-            self.noDataType = isReachable ? nil : .noInternet
+        isGetLocation = true
+        
+        isLoading = true
+        
+        weatherManager.fetchCurrentWeather(with: location) { (isSucess, weather, error) in
+            self.isLoading = false
+            guard error == nil else {
+                return
+            }
+            
+            guard isSucess,
+                let weatherResult = weather else {
+                    return
+            }
+            self.convertToWeatherModel(from: weatherResult)
+            
         }
+        
     }
-    
     
     // MARK: Get today weather
     
     // MARK: Save to Firebase
+    
+    // MARK: Conver WeatherResult to WeatherModel
+    func convertToWeatherModel(from weatherResult: WeatherResult) {
+        let weatherModel = CurrentWeatherModel(from: weatherResult)
+        self.currentWeatherModel = weatherModel
+    }
     
 }
 
@@ -150,9 +179,9 @@ extension TodayViewModel: CLLocationManagerDelegate {
         switch status {
         case .authorizedAlways, .authorizedWhenInUse:
             manager.startUpdatingLocation()
-            self.noDataType = nil
+            isGetLocation = true
         case .denied, .notDetermined, .restricted:
-            self.noDataType = .noLocation            
+            isGetLocation = false
         }
     }
 }
@@ -163,9 +192,10 @@ extension TodayViewModel {
         let status = networkManager.reachability.connection
         switch status {
         case .cellular, .wifi:
-            self.noDataType = nil
+            self.isConnectedNetwork = true
+            self.fetchWeatherInformation()
         case .none:
-            self.noDataType = .noInternet
+            self.isConnectedNetwork = false
         }
     }
     

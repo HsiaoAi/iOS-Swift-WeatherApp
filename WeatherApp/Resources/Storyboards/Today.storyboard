@@ -179,7 +179,11 @@
                                     <constraint firstItem="KuB-vH-zKO" firstAttribute="centerY" secondItem="cU7-gd-YjW" secondAttribute="centerY" id="hr1-lC-F9b"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIR-MD-8tx" userLabel="NoDataView" customClass="NoDataView" customModule="WeatherApp" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIR-MD-8tx" userLabel="noInternetView" customClass="NoDataView" customModule="WeatherApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKA-AR-hNl" userLabel="noLocationView" customClass="NoDataView" customModule="WeatherApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -188,6 +192,7 @@
                         <constraints>
                             <constraint firstItem="cU7-gd-YjW" firstAttribute="leading" secondItem="vh4-yj-26J" secondAttribute="leading" id="2YU-ui-EWf"/>
                             <constraint firstItem="Oe9-yq-ZRi" firstAttribute="bottom" secondItem="FUz-hM-y2a" secondAttribute="bottom" id="2yX-SX-LbY"/>
+                            <constraint firstItem="NKA-AR-hNl" firstAttribute="leading" secondItem="vh4-yj-26J" secondAttribute="leading" id="AAn-gf-7T2"/>
                             <constraint firstItem="Oe9-yq-ZRi" firstAttribute="width" secondItem="3w5-dP-k5G" secondAttribute="width" id="AMU-oO-MrC"/>
                             <constraint firstItem="vh4-yj-26J" firstAttribute="trailing" secondItem="cU7-gd-YjW" secondAttribute="trailing" id="Dfr-Sy-i0g"/>
                             <constraint firstItem="cU7-gd-YjW" firstAttribute="top" secondItem="FUz-hM-y2a" secondAttribute="bottom" id="Fgy-ob-KtQ"/>
@@ -200,9 +205,12 @@
                             <constraint firstItem="SIR-MD-8tx" firstAttribute="leading" secondItem="vh4-yj-26J" secondAttribute="leading" id="fiA-nv-hdP"/>
                             <constraint firstItem="FUz-hM-y2a" firstAttribute="top" secondItem="HXh-kp-8ve" secondAttribute="bottom" id="gdn-hU-mo4"/>
                             <constraint firstItem="3w5-dP-k5G" firstAttribute="bottom" secondItem="HXh-kp-8ve" secondAttribute="bottom" id="jkA-PC-VF0"/>
+                            <constraint firstAttribute="bottom" secondItem="NKA-AR-hNl" secondAttribute="bottom" id="o9Y-1W-fqH"/>
+                            <constraint firstItem="NKA-AR-hNl" firstAttribute="top" secondItem="vh4-yj-26J" secondAttribute="top" id="ozi-D7-9CI"/>
                             <constraint firstItem="HXh-kp-8ve" firstAttribute="top" secondItem="vh4-yj-26J" secondAttribute="top" id="po0-Sd-QCq"/>
                             <constraint firstItem="HXh-kp-8ve" firstAttribute="height" secondItem="5wN-V6-8BM" secondAttribute="height" multiplier="320:667" id="r4g-ug-HH1"/>
                             <constraint firstItem="3w5-dP-k5G" firstAttribute="width" secondItem="5wN-V6-8BM" secondAttribute="width" multiplier="140:375" id="rkd-QO-ehB"/>
+                            <constraint firstAttribute="trailing" secondItem="NKA-AR-hNl" secondAttribute="trailing" id="rlQ-rn-TAk"/>
                             <constraint firstItem="SIR-MD-8tx" firstAttribute="trailing" secondItem="vh4-yj-26J" secondAttribute="trailing" id="roV-qc-w05"/>
                             <constraint firstItem="vh4-yj-26J" firstAttribute="trailing" secondItem="HXh-kp-8ve" secondAttribute="trailing" id="t1N-Fg-HRb"/>
                             <constraint firstItem="FUz-hM-y2a" firstAttribute="leading" secondItem="vh4-yj-26J" secondAttribute="leading" id="z1q-md-Vrx"/>
@@ -213,7 +221,8 @@
                     <connections>
                         <outlet property="conditionItemLeadingContraint" destination="f1h-Ed-udl" id="jEe-TP-acf"/>
                         <outlet property="humidityValueLabel" destination="0XC-IR-xMt" id="Onk-m8-Y2W"/>
-                        <outlet property="nodataView" destination="SIR-MD-8tx" id="vGu-Vc-QZ1"/>
+                        <outlet property="noInternetView" destination="SIR-MD-8tx" id="QeO-rb-8Lm"/>
+                        <outlet property="noLocationView" destination="NKA-AR-hNl" id="j53-Ct-adH"/>
                         <outlet property="precipitationValueLabel" destination="axP-UC-1Tf" id="bjv-9q-Hgl"/>
                         <outlet property="pressureLabel" destination="wKj-bl-AeN" id="iMt-AJ-ksa"/>
                         <outlet property="shareButton" destination="KuB-vH-zKO" id="pqe-Zd-y6N"/>
@@ -222,6 +231,11 @@
                         <outlet property="topViewHeightContraint" destination="po0-Sd-QCq" id="s1A-1u-MoV"/>
                         <outlet property="windDirectionLabel" destination="kmC-Gj-JTA" id="9rw-Db-cRT"/>
                         <outlet property="windSpeedLabel" destination="8Iz-eZ-BFI" id="s7h-QP-S6I"/>
+                        <outletCollection property="weatherIconImageViews" destination="z0p-Xj-5Qo" collectionClass="NSMutableArray" id="KmK-cd-dIb"/>
+                        <outletCollection property="weatherIconImageViews" destination="h6X-Xi-obB" collectionClass="NSMutableArray" id="i73-Bf-Uhw"/>
+                        <outletCollection property="weatherIconImageViews" destination="r9k-Zj-mJI" collectionClass="NSMutableArray" id="PxM-c0-kpd"/>
+                        <outletCollection property="weatherIconImageViews" destination="7Sa-wT-mb8" collectionClass="NSMutableArray" id="kts-vR-zKj"/>
+                        <outletCollection property="weatherIconImageViews" destination="g44-Zq-ZsN" collectionClass="NSMutableArray" id="Fxo-hs-8si"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ABs-dq-mX1" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class TodayViewController: UIViewController {
 
@@ -22,8 +23,10 @@ class TodayViewController: UIViewController {
     @IBOutlet weak var windSpeedLabel: UILabel!
     @IBOutlet weak var windDirectionLabel: UILabel!
     @IBOutlet weak var shareButton: UIButton!
+    @IBOutlet weak var noInternetView: NoDataView!
+    @IBOutlet weak var noLocationView: NoDataView!
+    @IBOutlet var weatherIconImageViews: [UIImageView]!
     
-    @IBOutlet weak var nodataView: NoDataView!
     
     // MARK: Property - ViewModel
     private let viewModel = TodayViewModel()
@@ -39,8 +42,17 @@ class TodayViewController: UIViewController {
     // MARK : Set Up
     func setUpView() {
         
+        weatherIconImageViews.append(todayTopView.conditionImageView)
+        
         self.title = "Today"
-        self.nodataView.isHidden = true
+        self.noLocationView.isHidden = false
+        self.noLocationView.actionButton.addTarget(self, action: #selector(self.goToSettings), for: .touchUpInside)
+        self.noLocationView.setUpView(with: .noLocation)
+        
+        self.noInternetView.isHidden = false
+        self.noInternetView.actionButton.addTarget(self, action: #selector(self.tapReload), for: .touchUpInside)
+        self.noInternetView.setUpView(with: .noInternet)
+
         
         if DeviceType.phoneSE || DeviceType.phone4OrLess {
             todayTopViewHeightConstraint.constant = 165
@@ -59,33 +71,68 @@ class TodayViewController: UIViewController {
     }
     
     func setUpViewModel() {
+        
         // Closures
-        viewModel.hangleNodataView = { [weak self] noDataType in
-            self?.showNodataView(with: noDataType)
+        
+        viewModel.showWeatherReslut = { [weak self] in
+            guard let weatherModel = self?.viewModel.currentWeatherModel else { return }
+            self?.showWeatherInformation(with: weatherModel)
         }
         
+        viewModel.updateLoadingStatus = { [weak self] in
+            let isLoading = self?.viewModel.isLoading ?? false
+            if isLoading {
+                self?.showProgress(with: "Loading")
+            } else {
+                self?.dismissProgress()
+            }
+        }
         
+        viewModel.updateInternetStatus = { [weak self] in
+            let isConnected = self?.viewModel.isConnectedNetwork ?? false
+            self?.noInternetView.isHidden = isConnected
+        }
+        
+        viewModel.updateLocationStatus = { [weak self] in
+            let isGetLocation = self?.viewModel.isGetLocation ?? false
+            self?.noLocationView.isHidden = isGetLocation
+        }
+        
+        // Call funcions
         self.viewModel.checkLocationAuthorization()
     }
     
-    func showNodataView(with noDataType: NoDataType?) {
+    
+    private func showWeatherInformation(with weatherModel: CurrentWeatherModel) {
         
-        guard let type = noDataType else {
-            nodataView.isHidden = true
-            return
+        DispatchQueue.main.async {
+            let cityName = weatherModel.cityName
+            let countryName = weatherModel.contryFullName ?? weatherModel.countryAbbr
+            self.todayTopView.locationLabel.text = "\(cityName), \(countryName)"
+            self.todayTopView.informationLabel.text = "\(Int(weatherModel.temp))°C  |  \(weatherModel.main)"
+            self.humidityValueLabel.text = "\(weatherModel.humidity) %"
+            self.precipitationValueLabel.text = "\(weatherModel.precipitation) mm"
+            self.pressureLabel.text = "\(weatherModel.pressure) hPa"
+            self.windSpeedLabel.text = "\(weatherModel.windSppedKmpPerHour) km/h"
+            self.windDirectionLabel.text = "\(weatherModel.windDirection)"
+            
+            let imageTintColor: UIColor = (weatherModel.dayType == .day) ? UIColor.Custom.weatherIconDayColor : UIColor.Custom.weatherIconNightColor
+            
+            
+            _ = self.weatherIconImageViews.map { $0.tintColor = imageTintColor }
         }
-        
-        nodataView.setUpView(with: type)
-        
-        switch type {
-        case .noInternet:
-            nodataView.actionButton.addTarget(self, action: #selector(tapReload), for: .touchUpInside)
-        case .noLocation:
-            nodataView.actionButton.addTarget(self, action: #selector(goToSettings), for: .touchUpInside)
+    }
+    
+    private func showProgress(with status: String) {
+        DispatchQueue.main.async {
+            SVProgressHUD.show(withStatus: status)
         }
-        
-        nodataView.isHidden = false
-        
+    }
+    
+    private func dismissProgress() {
+        DispatchQueue.main.async {
+            SVProgressHUD.dismiss()
+        }
     }
 
 }
