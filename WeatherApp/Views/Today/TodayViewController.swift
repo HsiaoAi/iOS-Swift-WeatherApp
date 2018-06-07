@@ -41,9 +41,7 @@ class TodayViewController: UIViewController {
 
     // MARK : Set Up
     func setUpView() {
-        
-        weatherIconImageViews.append(todayTopView.conditionImageView)
-        
+
         self.title = "Today"
         self.noLocationView.isHidden = false
         self.noLocationView.actionButton.addTarget(self, action: #selector(self.goToSettings), for: .touchUpInside)
@@ -108,6 +106,7 @@ class TodayViewController: UIViewController {
         DispatchQueue.main.async {
             let cityName = weatherModel.cityName
             let countryName = weatherModel.contryFullName ?? weatherModel.countryAbbr
+            self.todayTopView.conditionImageView.image = weatherModel.image
             self.todayTopView.locationLabel.text = "\(cityName), \(countryName)"
             self.todayTopView.informationLabel.text = "\(Int(weatherModel.temp))°C  |  \(weatherModel.main)"
             self.humidityValueLabel.text = "\(weatherModel.humidity) %"
@@ -119,7 +118,7 @@ class TodayViewController: UIViewController {
             let imageTintColor: UIColor = (weatherModel.dayType == .day) ? UIColor.Custom.weatherIconDayColor : UIColor.Custom.weatherIconNightColor
             
             
-            _ = self.weatherIconImageViews.map { $0.tintColor = imageTintColor }
+            // _ = self.weatherIconImageViews.map { $0.tintColor = imageTintColor }
         }
     }
     

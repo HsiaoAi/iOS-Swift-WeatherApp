@@ -5,6 +5,7 @@
 //  Created by HsiaoAi on 2018/6/6.
 //  Copyright © 2018 HsiaoAi. All rights reserved.
 //
+import UIKit
 
 struct WeatherResult: Codable {
     
@@ -30,6 +31,10 @@ struct Weather: Codable {
     let id: Int
     let main: String
     let description: String
+    var icon: String
+    var image: UIImage {
+        return getWeatherIcon(with: icon)
+    }
 }
 
 struct Coordinate: Codable {
@@ -107,6 +112,60 @@ func getWindDirectionAbbr(with degree: Double) -> String? {
         return "NNW"
     } else {
         return nil
+    }
+}
+
+func getWeatherIcon(with icon: String) -> UIImage {
+    switch icon {
+    
+    case "01d":
+        return #imageLiteral(resourceName: "ClearSkyDay")
+    case "01n":
+        return #imageLiteral(resourceName: "ClearSkyNight")
+    
+    case "02d":
+        return #imageLiteral(resourceName: "FewCloudsDay")
+    case "02n":
+        return #imageLiteral(resourceName: "FewCloudsDayNight")
+        
+    case "03d":
+        return #imageLiteral(resourceName: "ScatteredCloudsDay")
+    case "03n":
+        return #imageLiteral(resourceName: "ScatteredCloudsNight")
+        
+    case "04d":
+        return #imageLiteral(resourceName: "BrokenCloudsDay")
+    case "04n":
+        return #imageLiteral(resourceName: "BrokenCloudsNight")
+        
+    case "09d":
+        return #imageLiteral(resourceName: "ShowerRainDay")
+    case "09n":
+        return #imageLiteral(resourceName: "ShowerRainNight")
+        
+    case "10d":
+        return #imageLiteral(resourceName: "RainDay")
+    case "10n":
+        return #imageLiteral(resourceName: "RainNight")
+        
+    case "11d":
+        return #imageLiteral(resourceName: "ThunderstormDay")
+    case "11n":
+        return #imageLiteral(resourceName: "ThunderstormNight")
+        
+    case "13d":
+        return #imageLiteral(resourceName: "SnowDay")
+    case "13n":
+        return #imageLiteral(resourceName: "SnowNight")
+        
+    case "50d":
+        return #imageLiteral(resourceName: "MistDay")
+    case "50n":
+        return #imageLiteral(resourceName: "MistNight")
+    
+    default:
+        return UIImage()
+        NSLog("cant find image")
     }
 }
 

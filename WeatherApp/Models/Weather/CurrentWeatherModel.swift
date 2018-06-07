@@ -6,6 +6,7 @@
 //  Copyright © 2018 HsiaoAi. All rights reserved.
 //
 import Foundation
+import UIKit
 
 struct CurrentWeatherModel {
     let countryAbbr: String
@@ -19,6 +20,7 @@ struct CurrentWeatherModel {
     let windSppedKmpPerHour: Double
     let windDirection: String
     let dayType: DayType
+    let image: UIImage
     
     init(from weatherResult: WeatherResult) {
         self.countryAbbr = weatherResult.system.country
@@ -32,6 +34,7 @@ struct CurrentWeatherModel {
         // Default wind speed unit is meter/sec
         self.windSppedKmpPerHour = weatherResult.wind.speed * 3.6
         self.windDirection = weatherResult.wind.direction ?? ""
+        self.image = weatherResult.weather.first?.image ?? UIImage()
      
         let now = Double(Date().timeIntervalSince1970)
         let sunset = weatherResult.system.sunset
