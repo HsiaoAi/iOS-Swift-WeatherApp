@@ -44,6 +44,10 @@ class TodayViewController: UIViewController {
     func setUpView() {
 
         title = "Today"
+        
+        let imageTintColor = UIColor.Custom.weatherIconDayColor
+        _ = weatherIconImageViews.map { $0.tintColor = imageTintColor }
+
         noLocationView.isHidden = false
         noLocationView.setUpView(with: .noLocation)
         noLocationView.actionButton.addTarget(self, action: #selector(self.goToSettings), for: .touchUpInside)
@@ -115,10 +119,6 @@ class TodayViewController: UIViewController {
             self.pressureLabel.text = "\(weatherModel.pressure) hPa"
             self.windSpeedLabel.text = "\(weatherModel.windSppedKmpPerHour) km/h"
             self.windDirectionLabel.text = "\(weatherModel.windDirection)"
-            
-            let imageTintColor: UIColor = (weatherModel.dayType == .day) ? UIColor.Custom.weatherIconDayColor : UIColor.Custom.weatherIconNightColor
-            
-            // _ = self.weatherIconImageViews.map { $0.tintColor = imageTintColor }
         }
     }
     
@@ -147,26 +147,34 @@ extension TodayViewController {
     }
     
     @objc func tapShareButton() {
-        screenShotMethod()
-//        let actionViewController = UIActivityViewController(activityItems: [], applicationActivities: nil)
-//        //        if let popoverPresentationController = actionViewController.popoverPresentationController {
-//        //            popoverPresentationController.barButtonItem = (sender as! UIBarButtonItem)
-//        //        }
-//        self.present(actionViewController, animated: true, completion: nil)
+        var sharedItems = [Any]()
+        let appURL = URL(string: "hsiaoaiWeatherApp://")
+        
+        if let image = screenShotMethod() {
+            let cityName = viewModel.currentWeatherModel?.cityName ?? ""
+            let description = "Check the current weather in \(cityName) :)"
+            sharedItems.append(contentsOf: [description, image])
+        } else if let url = appURL {
+            let description = "Download WeatherApp to get the current weather informaiotn. :)\n"
+            sharedItems.append(contentsOf: [description, url])
+        }
+        
+        guard !sharedItems.isEmpty else { return }
+        
+        let actionViewController = UIActivityViewController(activityItems: sharedItems, applicationActivities: nil)
+        self.present(actionViewController, animated: true, completion: nil)
     }
     
-    func screenShotMethod() {
+    func screenShotMethod() -> UIImage? {
         let layer = UIApplication.shared.keyWindow!.layer
         let scale = UIScreen.main.scale
         let width = view.frame.size.width
         let height = layer.frame.height - bottomView.bounds.height 
         UIGraphicsBeginImageContextWithOptions(CGSize(width: width, height: height), false, scale);
-        guard let context = UIGraphicsGetCurrentContext() else {return}
+        guard let context = UIGraphicsGetCurrentContext() else {return nil}
         layer.render(in:context)
         let screenshotImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        if let image = screenshotImage {
-            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil )
-        }
+        return screenshotImage
     }
 }

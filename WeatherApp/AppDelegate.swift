@@ -60,7 +60,7 @@ extension AppDelegate {
     }
     
     func setSVProgressHUD() {
-        SVProgressHUD.setDefaultStyle(.custom)
+        SVProgressHUD.setDefaultStyle(.dark)
         SVProgressHUD.setDefaultAnimationType(.native)
         SVProgressHUD.setDefaultMaskType(.clear)
     }
