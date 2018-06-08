@@ -11,5 +11,6 @@ import UIKit
 extension UIStoryboard {
     
     static let today = UIStoryboard(name: "Today", bundle: nil)
+    static let forecast = UIStoryboard(name: "Forecast", bundle: nil)
     
 }

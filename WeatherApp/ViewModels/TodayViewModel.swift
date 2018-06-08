@@ -14,10 +14,11 @@ class TodayViewModel: NSObject {
     // MARK: Property - Models
     private let networkManager: NetworkConnectionManager = NetworkConnectionManager.shared
     private let locationManager: CLLocationManager = CLLocationManager()
-    private let weatherManager: WeatherManager = WeatherManager.shared
-    
+    private let weatherManager: WeatherManager = WeatherManager()
+  
     var currentLocation: CLLocation? {
         didSet {
+            NotificationCenter.default.post(name: .currentLocationChanged, object: nil)
             self.fetchWeatherInformation()
         }
     }
@@ -65,13 +66,11 @@ class TodayViewModel: NSObject {
     var updateInternetStatus: (() -> Void)?
     var updateLocationStatus: (() -> Void)?
 
-
-    
-    
     // MARK: Init
     override init() {
         super.init()
         setUp()
+        
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(checkLocationAuthorization),
@@ -109,18 +108,7 @@ class TodayViewModel: NSObject {
         
     }
     
-    func goToAppSettingsForLocation() {
-        let url = CLLocationManager.locationServicesEnabled() ? URL(string: UIApplicationOpenSettingsURLString) : URL(string: "App-Prefs:root=Privacy&path=LOCATION")
-        
-        UIApplication.shared.open(url!, options: [:]) { isOpen in
-            if isOpen {
-                self.checkLocationAuthorization()
-            } else {
-                NSLog("Please go to settings")
-            }
-        }
-    }
-    
+    // NARK: Get current weather
     func fetchWeatherInformation() {
         
         guard let location = self.currentLocation else {
@@ -139,24 +127,17 @@ class TodayViewModel: NSObject {
             }
             
             guard isSucess,
-                let weatherResult = weather else {
+                let currentWeatherModel = weather else {
                     return
             }
-            self.convertToWeatherModel(from: weatherResult)
+            
+            self.currentWeatherModel = currentWeatherModel
+            
             
         }
         
     }
-    
-    // MARK: Get today weather
-    
     // MARK: Save to Firebase
-    
-    // MARK: Conver WeatherResult to WeatherModel
-    func convertToWeatherModel(from weatherResult: WeatherResult) {
-        let weatherModel = CurrentWeatherModel(from: weatherResult)
-        self.currentWeatherModel = weatherModel
-    }
     
 }
 

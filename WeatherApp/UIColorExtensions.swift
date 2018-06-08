@@ -20,6 +20,8 @@ extension UIColor {
         static let weatherIconDayColor = UIColor(red: 255 / 255.0, green: 204 / 255.0, blue: 51 / 255.0, alpha: 1.0)
         
         static let weatherIconNightColor = UIColor(red: 54 / 255.0, green: 147 / 255.0, blue: 251 / 255.0, alpha: 1.0)
+        
+        static let seperatorColor = UIColor(red: 222 / 255.0, green: 222 / 255.0, blue: 222 / 255.0, alpha: 1.0)
     }
 }
 

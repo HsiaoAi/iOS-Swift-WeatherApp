@@ -33,7 +33,11 @@ class ColorfulNavigationController: UINavigationController {
         backgroundImageView.bottomAnchor.constraint(equalTo: navigationBar.bottomAnchor).isActive = true
         navigationBar.isTranslucent = false
         navigationBar.barTintColor = .white
-        navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.Custom.navigationBarTitleColor]
+        
+        navigationBar.titleTextAttributes = [
+            NSAttributedStringKey.foregroundColor: UIColor.Custom.navigationBarTitleColor,
+            NSAttributedStringKey.font: UIFont(name: "ProximaNova-Semibold", size: 18) ?? UIFont.systemFont(ofSize: 18, weight: .semibold)
+        ]
         
     }
 

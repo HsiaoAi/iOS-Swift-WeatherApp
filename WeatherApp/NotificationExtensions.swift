@@ -11,4 +11,6 @@ import Foundation
 extension Notification.Name {
     static let networkDisconnected = Notification.Name("networkDisconnected")
     static let appWillEnterForeground = Notification.Name("appWillEnterForeground")
+    static let currentLocationChanged = Notification.Name("currentLocationChanged")
+
 }

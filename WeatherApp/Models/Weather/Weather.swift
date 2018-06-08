@@ -62,7 +62,9 @@ struct Wind: Codable {
 }
 
 struct Rain: Codable {
-    let precipitation: Double
+    
+    let precipitation: Double?
+    
     private enum CodingKeys: String, CodingKey {
         case precipitation = "3h"
     }
@@ -77,97 +79,7 @@ struct System: Codable {
     }
 }
 
-func getWindDirectionAbbr(with degree: Double) -> String? {
-    if (degree >= 0 && degree < 22.5) || degree == 360 {
-        return "N"
-    } else if degree >= 22.5 && degree < 45 {
-        return "NNE"
-    } else if degree >= 45 && degree < 67.5 {
-        return "NE"
-    } else if degree >= 67.5 && degree < 90.0 {
-        return "ENE"
-    } else if degree >= 90.0 && degree < 112.5 {
-        return "E"
-    } else if degree >= 112.5 && degree < 135 {
-        return "ESE"
-    } else if degree >= 135 && degree < 157.5 {
-        return "SE"
-    } else if degree >= 157.5 && degree < 180 {
-        return "SSE"
-    } else if degree >= 180 && degree < 202.5 {
-        return "S"
-    } else if degree >= 202.5 && degree < 225 {
-        return "SSW"
-    } else if degree >= 225 && degree < 247.5 {
-        return "SW"
-    } else if degree >= 247.5 && degree < 270 {
-        return "WSW"
-    } else if degree >= 270 && degree < 292.5 {
-        return "W"
-    } else if degree >= 292.5 && degree < 315 {
-        return "WNW"
-    } else if degree >= 315 && degree < 337.5 {
-        return "NW"
-    } else if degree >= 337.5 && degree < 360 {
-        return "NNW"
-    } else {
-        return nil
-    }
-}
 
-func getWeatherIcon(with icon: String) -> UIImage {
-    switch icon {
-    
-    case "01d":
-        return #imageLiteral(resourceName: "ClearSkyDay")
-    case "01n":
-        return #imageLiteral(resourceName: "ClearSkyNight")
-    
-    case "02d":
-        return #imageLiteral(resourceName: "FewCloudsDay")
-    case "02n":
-        return #imageLiteral(resourceName: "FewCloudsDayNight")
-        
-    case "03d":
-        return #imageLiteral(resourceName: "ScatteredCloudsDay")
-    case "03n":
-        return #imageLiteral(resourceName: "ScatteredCloudsNight")
-        
-    case "04d":
-        return #imageLiteral(resourceName: "BrokenCloudsDay")
-    case "04n":
-        return #imageLiteral(resourceName: "BrokenCloudsNight")
-        
-    case "09d":
-        return #imageLiteral(resourceName: "ShowerRainDay")
-    case "09n":
-        return #imageLiteral(resourceName: "ShowerRainNight")
-        
-    case "10d":
-        return #imageLiteral(resourceName: "RainDay")
-    case "10n":
-        return #imageLiteral(resourceName: "RainNight")
-        
-    case "11d":
-        return #imageLiteral(resourceName: "ThunderstormDay")
-    case "11n":
-        return #imageLiteral(resourceName: "ThunderstormNight")
-        
-    case "13d":
-        return #imageLiteral(resourceName: "SnowDay")
-    case "13n":
-        return #imageLiteral(resourceName: "SnowNight")
-        
-    case "50d":
-        return #imageLiteral(resourceName: "MistDay")
-    case "50n":
-        return #imageLiteral(resourceName: "MistNight")
-    
-    default:
-        return UIImage()
-        NSLog("cant find image")
-    }
-}
 
 
 

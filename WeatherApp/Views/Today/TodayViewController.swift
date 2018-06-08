@@ -42,8 +42,7 @@ class TodayViewController: UIViewController {
 
     // MARK : Set Up
     func setUpView() {
-
-        title = "Today"
+        title = TabBarItemType.today.title
         
         let imageTintColor = UIColor.Custom.weatherIconDayColor
         _ = weatherIconImageViews.map { $0.tintColor = imageTintColor }
@@ -143,7 +142,7 @@ extension TodayViewController {
     }
     
     @objc func goToSettings() {
-        viewModel.goToAppSettingsForLocation()
+        goToAppSettingsForLocation()
     }
     
     @objc func tapShareButton() {

@@ -33,6 +33,7 @@ class TabBarController: UITabBarController {
         tabBar.barStyle = .default
         tabBar.isTranslucent = false
         tabBar.tintColor = UIColor.Custom.tabBarItemSelectedColor
+        tabBarItem.setTitleTextAttributes([NSAttributedStringKey.font : UIFont(name: "ProximaNova-Semibold", size: 10) ?? UIFont.systemFont(ofSize: 10, weight: .semibold)], for: UIControlState())
         tabBar.unselectedItemTintColor = UIColor.Custom.tabBarItemUnSelectedColor
     }
     
@@ -44,15 +45,19 @@ extension TabBarController {
     // TODO: prepare the correct viewControllers
     static func prepare(for itemType: TabBarItemType) -> UIViewController {
         switch itemType {
+            
         case .today:
             let todayViewController = load(TodayViewController.self, from: .today)
             let navigationController = ColorfulNavigationController(rootViewController: todayViewController)
             navigationController.tabBarItem = TabBarItem(itemType: itemType)
             return navigationController
+        
         case .forecast:
-            let forecastViewController = ColorfulNavigationController(rootViewController: UIViewController())
-            forecastViewController.tabBarItem = TabBarItem(itemType: itemType)
-            return forecastViewController
+            let forecastViewController = load(ForecastViewController.self, from: .forecast)
+            let navigationController = ColorfulNavigationController(rootViewController: forecastViewController)
+            navigationController.tabBarItem = TabBarItem(itemType: itemType)
+            return navigationController
+        
         }
     }
 }

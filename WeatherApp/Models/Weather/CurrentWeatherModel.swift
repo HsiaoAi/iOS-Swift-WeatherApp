@@ -21,6 +21,7 @@ struct CurrentWeatherModel {
     let windDirection: String
     let dayType: DayType
     let image: UIImage
+    let coordinate: Coordinate
     
     init(from weatherResult: WeatherResult) {
         self.countryAbbr = weatherResult.system.country
@@ -35,6 +36,8 @@ struct CurrentWeatherModel {
         self.windSppedKmpPerHour = weatherResult.wind.speed * 3.6
         self.windDirection = weatherResult.wind.direction ?? ""
         self.image = weatherResult.weather.first?.image ?? UIImage()
+        self.coordinate = weatherResult.coordinate
+        
      
         let now = Double(Date().timeIntervalSince1970)
         let sunset = weatherResult.system.sunset
