@@ -19,11 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         initTabBarViewController()
-        SVProgressHUD.setDefaultStyle(.custom)
-        SVProgressHUD.setDefaultAnimationType(.native)
-        SVProgressHUD.setDefaultMaskType(.clear)
-        
-
+        setSVProgressHUD()
+    
         return true
     }
 
@@ -60,6 +57,12 @@ extension AppDelegate {
         window.rootViewController = tabBarViewController
         window.makeKeyAndVisible()
         self.window = window
+    }
+    
+    func setSVProgressHUD() {
+        SVProgressHUD.setDefaultStyle(.custom)
+        SVProgressHUD.setDefaultAnimationType(.native)
+        SVProgressHUD.setDefaultMaskType(.clear)
     }
     
 }
