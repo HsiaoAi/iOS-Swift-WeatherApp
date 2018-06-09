@@ -38,11 +38,8 @@ class WeatherAppUITests: XCTestCase {
         let tabBarItemTodayButton = tabBarsQuery/*@START_MENU_TOKEN@*/.buttons["TabBarItemToday"]/*[[".buttons[\"Today\"]",".buttons[\"TabBarItemToday\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
         tabBarItemTodayButton.tap()
         
-        let buttonsQuery = XCUIApplication().buttons
-        let shareButton = buttonsQuery.buttons["Share"]
-        shareButton.tap()
-        
         let app = XCUIApplication()
+        app.buttons["Share"].tap()
         app.buttons["Cancel"].tap()
         
     }

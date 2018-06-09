@@ -143,7 +143,7 @@ extension ForecastViewController: UITableViewDelegate, UITableViewDataSource {
             index = (indexPath.section - 1) * 8 + indexPath.row + (viewModel.forecastListModel?.todayListCount ?? 0)
         }
         if let list = viewModel.forecastListModel?.lists[index] {
-            cell.degreeLabel.text = "\(list.degree)°"
+            cell.degreeLabel.text = "\(list.temp)°"
             cell.iconImageView.image = list.image
             cell.descriptionLabel.text = list.description
             cell.timeLabel.text = list.time

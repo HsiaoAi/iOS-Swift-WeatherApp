@@ -50,6 +50,7 @@
 		87D9405020CA7AF900457DEF /* ForecastResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D9404F20CA7AF900457DEF /* ForecastResult.swift */; };
 		87D9405220CA81E200457DEF /* ForecastList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D9405120CA81E200457DEF /* ForecastList.swift */; };
 		87EC07D720CBF73A00BC9203 /* WeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EC07D620CBF73A00BC9203 /* WeatherAppUITests.swift */; };
+		87EC07DF20CC01BD00BC9203 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87EC07DE20CC01BD00BC9203 /* GoogleService-Info.plist */; };
 		EB03D8CDAA73B4F943A8EDBD /* Pods_WeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E64DD3288B4B871BE7D15CC7 /* Pods_WeatherApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +113,7 @@
 		87EC07D420CBF73A00BC9203 /* WeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87EC07D620CBF73A00BC9203 /* WeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITests.swift; sourceTree = "<group>"; };
 		87EC07D820CBF73A00BC9203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87EC07DE20CC01BD00BC9203 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A996C044DCAB78E9DA76647E /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E64DD3288B4B871BE7D15CC7 /* Pods_WeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -235,6 +237,7 @@
 		876E32F820C6EA3E003CFD79 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				87EC07DE20CC01BD00BC9203 /* GoogleService-Info.plist */,
 				87D9402B20C8D22800457DEF /* Info.plist */,
 				8733CFD720C7FF7400DBCFB3 /* CityList.json */,
 			);
@@ -431,6 +434,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87EC07DF20CC01BD00BC9203 /* GoogleService-Info.plist in Resources */,
 				87D9404520CA3DC900457DEF /* ProximaNova-Bold.otf in Resources */,
 				87D9404220CA34D600457DEF /* ForecastCell.xib in Resources */,
 				87D9403E20CA2F7E00457DEF /* Forecast.storyboard in Resources */,
@@ -479,16 +483,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

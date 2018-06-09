@@ -10,5 +10,7 @@ target 'WeatherApp' do
   pod 'SDWebImage'
   pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
   pod 'ReachabilitySwift'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
 
 end

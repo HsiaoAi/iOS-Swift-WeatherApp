@@ -9,6 +9,9 @@
 import Foundation
 import CoreLocation
 import Alamofire
+import FirebaseDatabase
+
+
 
 typealias FetchCurrentWeatherCompletion = (( _ success: Bool, _ weatherResult: CurrentWeatherModel?, _ error: Error?) -> Void)
 
@@ -53,8 +56,16 @@ class WeatherManager {
             
             do {
                 let weatherResult = try JSONDecoder().decode(WeatherResult.self, from: data)
-                let currentWeatherModel = self.convertToWeatherModel(from: weatherResult)
+                var currentWeatherModel = self.convertToWeatherModel(from: weatherResult)
                 self.currentWeatherModel = currentWeatherModel
+                
+                let ref = Database.database().reference()
+                ref.child("CurrentWeather")
+                    .child(currentWeatherModel.countryAbbr)
+                    .child(currentWeatherModel.cityName.uppercased())
+                    .child("\(currentWeatherModel.timeStamp)")
+                    .updateChildValues(currentWeatherModel.dictionaries)
+                
                 completion(true, currentWeatherModel, nil)
                 
             } catch let error {
@@ -99,6 +110,18 @@ class WeatherManager {
             do {
                 let forecastResult = try JSONDecoder().decode(ForecastResult.self, from: data)
                 let lists = forecastResult.list.map { ForecastList(list: $0) }
+                for list in lists {
+                    let data = list.getDictionaries()
+                    let ref = Database.database().reference()
+                    ref.child("Forecast")
+                        .child(forecastResult.city.country)
+                        .child(forecastResult.city.name)
+                        .child("\(list.timeStamp)")
+                        .childByAutoId()
+                        .updateChildValues(data, withCompletionBlock: { (error, _) in
+                            print(error!)
+                        })
+                }
                 completion(true, forecastResult.city.name, lists, nil)
                 
             } catch let error {

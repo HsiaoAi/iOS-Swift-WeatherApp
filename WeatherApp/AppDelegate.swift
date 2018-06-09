@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Foundation
+import Firebase
 import SVProgressHUD
 
 @UIApplicationMain
@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         initTabBarViewController()
         setSVProgressHUD()
+        FirebaseApp.configure()
     
         return true
     }

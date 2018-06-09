@@ -22,6 +22,23 @@ struct CurrentWeatherModel {
     let dayType: DayType
     let image: UIImage
     let coordinate: Coordinate
+    let timeStamp: Int = Int(Date().timeIntervalSince1970)
+    
+    lazy var dictionaries: [String: Any] = {
+        let dictionaries: [String: Any] = [
+            "countryAbbr": self.contryFullName ?? "",
+            "cityName": self.cityName,
+            "temp": self.temp,
+            "main": self.main,
+            "humidity": self.humidity,
+            "precipitation": self.precipitation,
+            "pressure": self.pressure,
+            "windSppedKmpPerHour": self.windSppedKmpPerHour,
+            "windDirection": self.windDirection
+        ]
+        
+        return dictionaries
+    }()
     
     init(from weatherResult: WeatherResult) {
         self.countryAbbr = weatherResult.system.country

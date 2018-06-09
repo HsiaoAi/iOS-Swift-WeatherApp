@@ -11,10 +11,23 @@ import UIKit
 
 struct ForecastList {
     let description: String
-    let degree: Int
+    let temp: Int
     let image: UIImage
     let time: String
+    let icon: String
     let weekDay: Weekday
+    let timeStamp = Int(Date().timeIntervalSince1970)
+    
+    func getDictionaries() -> [String: Any] {
+        let dictionaries: [String : Any] = [
+            "description": self.description,
+            "temp": self.temp,
+            "time": self.time,
+            "icon": self.icon,
+            "timeStamp": self.timeStamp
+        ]
+        return dictionaries
+    }
     
     init(list: List) {
         let description = list.weather.first?.description ?? ""
@@ -26,9 +39,10 @@ struct ForecastList {
                 weatherDesc += "\(newString) "
             }
         }
+        self.icon = list.weather.first?.icon ?? ""
         self.description = weatherDesc
         self.image = list.weather.first?.image ?? UIImage()
-        self.degree = Int(list.main.temp)
+        self.temp = Int(list.main.temp)
         let date = Date(timeIntervalSince1970: list.dt)
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:ss"
