@@ -15,7 +15,7 @@ class ForecastViewModel {
     // MARk: Property
     let weatherManager = WeatherManager.shared
     
-    var forecastLists: [ForecastList]? {
+    var forecastListModel: ForecastListsModel? {
         didSet {
             self.updateTableView?()
         }
@@ -69,10 +69,34 @@ class ForecastViewModel {
     
     func fetchForecast() {
         weatherManager.fetchThreeHoursForecast { (isSucess, cityName, forecastLists, error) in
-            self.currentCity = cityName
-            self.forecastLists = forecastLists
+            if isSucess {
+                
+                self.currentCity = cityName
+                guard let weekdayIndex = self.sortForecastModels() else { return }
+                guard let lists = forecastLists else { return }
+                let forecastListsModel = ForecastListsModel(lists: lists, weekdayIndexSet: weekdayIndex)
+                self.forecastListModel = forecastListsModel
+            
+            } else if let error = error {
+            
+                print(error)
+            
+            }
         }
     }
+    
+    func sortForecastModels() -> [Int]? {
+        guard let todayWeekDay = Weekday(rawValue: Calendar.current.component(.weekday, from: Date())) else { return nil }
+        
+        var weekDayIndex = [todayWeekDay.rawValue - 1]
+        for index in 1...4 {
+            let nextWeekday = (index + todayWeekDay.rawValue - 1 ) % 7
+            weekDayIndex.append(nextWeekday)
+        }
+        return weekDayIndex
+    }
+    
+    
 
     
 }

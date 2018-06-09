@@ -69,17 +69,18 @@ class ForecastViewController: UIViewController {
 
 extension ForecastViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        let count = 1
-        if count == 0 {
-            tableView.isHidden = true
-        } else {
-            tableView.isHidden = false
-        }
-        return count
+        return viewModel.forecastListModel?.weedaySectionTiltes.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.forecastLists?.count ?? 0
+        let total = viewModel.forecastListModel?.lists.count ?? 0
+        if section == 0 {
+            return viewModel.forecastListModel?.todayListCount ?? 0
+        } else if (((section + 1) * 8) > total){
+            return 8 - ((section + 1) * 8 - total)
+        } else {
+            return 8
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -92,16 +93,24 @@ extension ForecastViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = ForecastSectionHeaderView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 45))
-        view.dateLabel.text = "Today".uppercased()
+        view.dateLabel.text = self.viewModel.forecastListModel?.weedaySectionTiltes[section] ?? ""
+        
         return view
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ForecastCell.id) as? ForecastCell else { return UITableViewCell() }
-        if let list = viewModel.forecastLists?[indexPath.row] {
+        var index = 0
+        if indexPath.section == 0 {
+            index = indexPath.row
+        } else {
+            index = (indexPath.section - 1) * 8 + indexPath.row + (viewModel.forecastListModel?.todayListCount ?? 0)
+        }
+        if let list = viewModel.forecastListModel?.lists[index] {
             cell.degreeLabel.text = "\(list.degree)°"
             cell.iconImageView.image = list.image
             cell.descriptionLabel.text = list.description
+            cell.timeLabel.text = list.time
         }
         return cell
     }

@@ -360,5 +360,12 @@ let contryNameDictionaries: [String: String] = [
     "ZW": "Zimbabwe"
 ]
 
+enum Weekday: Int {
+    case sun = 1
+    case mon, tue, wed, thur, fri, sat
+}
+
+
+
 
 
