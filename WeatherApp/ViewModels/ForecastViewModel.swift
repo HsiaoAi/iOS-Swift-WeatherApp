@@ -42,11 +42,25 @@ class ForecastViewModel {
         }
     }
     
+    var isLoading: Bool = false {
+        didSet {
+            self.updateLoadingStatus?()
+        }
+    }
+    
+    var alertErrorMessage: String? {
+        didSet {
+            self.showAlertClosure?()
+        }
+    }
+    
     // MARK: Property - Closures
     var updateNaviTitle: ((_ title: String) -> Void)?
     var updateNoInternetView: (() -> Void)?
     var updateNoLocationView: (() -> Void)?
     var updateTableView: (() -> Void)?
+    var updateLoadingStatus: (() -> Void)?
+    var showAlertClosure: (() -> Void)?
 
     
     // MARK: Init
@@ -68,19 +82,26 @@ class ForecastViewModel {
     }
     
     func fetchForecast() {
+        isLoading = true
         weatherManager.fetchThreeHoursForecast { (isSucess, cityName, forecastLists, error) in
-            if isSucess {
+            self.isLoading = false
+            
+            if let error = error {
+                
+                if let fetchError = error as? FecthWeatherError {
+                    self.alertErrorMessage = fetchError.rawValue
+                } else {
+                    self.alertErrorMessage = error.localizedDescription
+                }
+
+            } else if isSucess {
                 
                 self.currentCity = cityName
                 guard let weekdayIndex = self.sortForecastModels() else { return }
                 guard let lists = forecastLists else { return }
                 let forecastListsModel = ForecastListsModel(lists: lists, weekdayIndexSet: weekdayIndex)
                 self.forecastListModel = forecastListsModel
-            
-            } else if let error = error {
-            
-                print(error)
-            
+                
             }
         }
     }

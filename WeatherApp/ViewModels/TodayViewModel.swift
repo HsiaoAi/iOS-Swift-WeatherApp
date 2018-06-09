@@ -48,15 +48,9 @@ class TodayViewModel: NSObject {
         }
     }
     
-    var alertOptionsMessage: String? {
-        didSet {
-            // Todo: Show alert
-        }
-    }
-    
     var alertErrorMessage: String? {
         didSet {
-            // Todo: Show alert
+            self.showAlertClosure?()
         }
     }
     
@@ -65,6 +59,7 @@ class TodayViewModel: NSObject {
     var updateLoadingStatus: (() -> Void)?
     var updateInternetStatus: (() -> Void)?
     var updateLocationStatus: (() -> Void)?
+    var showAlertClosure: (() -> Void)?
 
     // MARK: Init
     override init() {
@@ -117,12 +112,16 @@ class TodayViewModel: NSObject {
             return
         }
         isGetLocation = true
-        
         isLoading = true
         
         weatherManager.fetchCurrentWeather(with: location) { (isSucess, weather, error) in
             self.isLoading = false
             guard error == nil else {
+                if let fetchError = error! as? FecthWeatherError {
+                    self.alertErrorMessage = fetchError.rawValue
+                } else {
+                    self.alertErrorMessage = error?.localizedDescription
+                }
                 return
             }
             

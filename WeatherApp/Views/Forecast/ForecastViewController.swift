@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class ForecastViewController: UIViewController {
 
@@ -26,7 +27,8 @@ class ForecastViewController: UIViewController {
     
     // MARK : Set Up
     func setUpView() {
-        title = TabBarItemType.forecast.title
+        
+        self.navigationItem.title = TabBarItemType.forecast.title
         noInternetView.setUpView(with: .noInternet)
         noInternetView.actionButton.addTarget(self, action: #selector(tapReload), for: .touchUpInside)
         noLocationView.setUpView(with: .noLocation)
@@ -44,7 +46,7 @@ class ForecastViewController: UIViewController {
     
     func setUpViewModel() {
         viewModel.updateNaviTitle = { [weak self] title in
-            self?.title = title
+            self?.navigationItem.title  = title
         }
         
         viewModel.updateNoInternetView = { [weak self] in
@@ -61,8 +63,42 @@ class ForecastViewController: UIViewController {
             self?.tableView.reloadData()
         }
         
+        viewModel.updateLoadingStatus = { [weak self] in
+            let isLoading = self?.viewModel.isLoading ?? false
+            if isLoading {
+                self?.showProgress(with: "Loading")
+            } else {
+                self?.dismissProgress()
+            }
+        }
+        
+        viewModel.showAlertClosure = { [weak self] in
+            guard let message = self?.viewModel.alertErrorMessage else { return }
+            self?.showAlert(with: message)
+        }
+        
         viewModel.fetchForecast()
         
+    }
+    
+    private func showProgress(with status: String) {
+        DispatchQueue.main.async {
+            SVProgressHUD.show(withStatus: status)
+        }
+    }
+    
+    private func dismissProgress() {
+        DispatchQueue.main.async {
+            SVProgressHUD.dismiss()
+        }
+    }
+    
+    private func showAlert(with message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction( UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        DispatchQueue.main.async {
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 
 }

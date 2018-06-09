@@ -100,6 +100,11 @@ class TodayViewController: UIViewController {
             self?.noLocationView.isHidden = isGetLocation
         }
         
+        viewModel.showAlertClosure = { [weak self] in
+            guard let message = self?.viewModel.alertErrorMessage else { return }
+            self?.showAlert(with: message)
+        }
+        
         // Call funcions
         self.viewModel.checkLocationAuthorization()
     }
@@ -130,6 +135,14 @@ class TodayViewController: UIViewController {
     private func dismissProgress() {
         DispatchQueue.main.async {
             SVProgressHUD.dismiss()
+        }
+    }
+    
+    private func showAlert(with message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction( UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        DispatchQueue.main.async {
+            self.present(alert, animated: true, completion: nil)
         }
     }
 
