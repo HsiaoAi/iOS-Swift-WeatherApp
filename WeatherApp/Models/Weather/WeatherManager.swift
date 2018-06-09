@@ -23,7 +23,7 @@ class WeatherManager {
     static let shared = WeatherManager()
     var currentWeatherModel: CurrentWeatherModel? 
     
-    func fetchCurrentWeather(with location: CLLocation, completion: @escaping FetchCurrentWeatherCompletion) {
+    func fetchCurrentWeather(completion: @escaping FetchCurrentWeatherCompletion) {
         guard let url = URL(string: "http://api.openweathermap.org/data/2.5/weather") else {
             return
         }
@@ -118,9 +118,7 @@ class WeatherManager {
                         .child(forecastResult.city.name)
                         .child("\(list.timeStamp)")
                         .childByAutoId()
-                        .updateChildValues(data, withCompletionBlock: { (error, _) in
-                            print(error!)
-                        })
+                        .updateChildValues(data)
                 }
                 completion(true, forecastResult.city.name, lists, nil)
                 

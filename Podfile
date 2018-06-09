@@ -13,4 +13,10 @@ target 'WeatherApp' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
 
+target 'WeatherAppTests' do
+    # Pods for testing
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
+  end
+
 end

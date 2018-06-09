@@ -94,6 +94,7 @@
 		2A5FB3F72D64DD20CBE489AA40110CEA /* FIRMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 38703ABC4AB8A0DC16793B09DC40E575 /* FIRMutableDictionary.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		2A840048E4D978D215430ADACE3DFFAA /* FIRVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8207E01466205437895A61EEBB433C89 /* FIRVersion.m */; };
 		2C5896A0EB8A55677A176A1CF7607342 /* FViewCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9640167B54BB42BACB5DD251DF2F93 /* FViewCache.m */; };
+		2C9BED620667585DF8B78E90711D5806 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81171A33E101DE2E81C20F54CA8EFBAD /* Foundation.framework */; };
 		2CE8E0FA0FC875C5EC46E28248AE25A7 /* FTupleStringNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF389105731188DD2ADEB64518460D0 /* FTupleStringNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2E339A00B5960A5AF8BCD5A92B0AB4D2 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DAD0C93EF5772AF43CFF81A59084D206 /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E6A4CD5D0703B2E1B5705629B98EAA4 /* histogram.h in Headers */ = {isa = PBXBuildFile; fileRef = A8EC0499451EE64622B1A289358CD19F /* histogram.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -103,9 +104,11 @@
 		2FC45FB58ABE8C590560A5FE6704B623 /* hash.cc in Sources */ = {isa = PBXBuildFile; fileRef = 66BCD54514DC492E8259B560E01DA709 /* hash.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		2FFE84C17965BF07775E7ECCAD6A7D45 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BFF588B82B616C11E6528F26E84E61 /* ImageIO.framework */; };
 		31084F7715C9CD34A95CB739C01F9814 /* FSyncTree.m in Sources */ = {isa = PBXBuildFile; fileRef = EA01EDF905D74D985B470384D9ECB38F /* FSyncTree.m */; };
+		310F96408CF15C26465484E27116A41B /* Pods-WeatherApp-WeatherAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C99E168F5ACE18BD863D88BC10B9938C /* Pods-WeatherApp-WeatherAppTests-dummy.m */; };
 		3143D507FD0DB467DC6F0E4360E2FAF0 /* FIRDatabaseQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3AD561335F15C2D530AE86C2A43B30 /* FIRDatabaseQuery.m */; };
 		3190D7002FD14C00057AC09BBAC3AD8D /* version_set.h in Headers */ = {isa = PBXBuildFile; fileRef = B0C9F21782D0220C48F24EAE826188F2 /* version_set.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		32CA17FC3144B8CF186D2B337D0EDA7F /* FStorageEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BC78332143CC8A891A3F16E2B8A87BC /* FStorageEngine.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		32CA5CC84F3673C2D84440CAFEACF76A /* Pods-WeatherApp-WeatherAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA0F1678B5AACDF6D3E7D34D1671DAD /* Pods-WeatherApp-WeatherAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32E410D91664AD3C6450443678B673FF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DB05C68F5E4022C41C131AB620852A /* SystemConfiguration.framework */; };
 		32F5C041A14CCBB3DA8142AEEBF42B56 /* FIRDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A430C20DCAFE9DA6F53CE8B3D230E4C /* FIRDatabase.m */; };
 		33276E510A278BFB2EB60436106F7A8D /* FTupleObjectNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 807B7FA65FBE268A49586200514C3317 /* FTupleObjectNode.m */; };
@@ -114,7 +117,7 @@
 		34C9E15D84AE7A7CA88085B3766DB9B3 /* version_edit.h in Headers */ = {isa = PBXBuildFile; fileRef = A4158F0900A1D7374825141C102DCFF9 /* version_edit.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		34D853AC2A3A91686A984B1ADFFE9494 /* SDWebImageGIFCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B827A43C0A184165132C804DB2CD8C /* SDWebImageGIFCoder.m */; };
 		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB2E00799EF2C5253E92C8F7ABFFE31 /* TaskDelegate.swift */; };
-		369F6E0C48345D519E8CCA64717BC3AB /* Pods-WeatherApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4791E228C5588DC582AAE0C7CAFA4 /* Pods-WeatherApp-dummy.m */; };
+		369F6E0C48345D519E8CCA64717BC3AB /* Pods-WeatherApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 912D66FBB486453BB7F435C0BF82A766 /* Pods-WeatherApp-dummy.m */; };
 		36A029F38E0E35737301EDB45E080393 /* FLevelDBStorageEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6471C4B44E6E7F8BF27F643DE7BCD928 /* FLevelDBStorageEngine.m */; };
 		37259AFF7E4936746A5D87716890A45C /* SDImageCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 594D26C1F6667B150BC4CF12FB54B41C /* SDImageCacheConfig.m */; };
 		376CDA9C28558E95661A3B591918BE92 /* FSRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = D6ACB7F74CC9DC2B0FC38F0D6F0280EA /* FSRWebSocket.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -474,7 +477,7 @@
 		EAF396742DD7BC7F97312F98AAD2B64F /* FImmutableSortedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 519083F62E5D41FF55F255CC68304190 /* FImmutableSortedDictionary.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EB123F88C3EC600AACE42CE7EEBB4192 /* FViewProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = F38F48BB8C71404039A1AFBABE2117CE /* FViewProcessor.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EBB38766609FE6536A2BA04628D40B57 /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E84627E66AD01BD849C2D2A471329 /* ReachabilitySwift-dummy.m */; };
-		EC5DEEEC81603948384C61677BF1D71B /* Pods-WeatherApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18886651FC5B7480F2F443CA93F6AF50 /* Pods-WeatherApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC5DEEEC81603948384C61677BF1D71B /* Pods-WeatherApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C5AF4E0734CDAB43AB75AC8EEF91CDA /* Pods-WeatherApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ECA28CA104CB74EC56EB51E685DC3333 /* atomic_pointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E069320213A60E7A99B9B4E8FAE2009 /* atomic_pointer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		ECBA0379E33DE19432B197ED52BAACF0 /* FTree.h in Headers */ = {isa = PBXBuildFile; fileRef = DF0FF8BA36FC99469EF22E1EBFB907FA /* FTree.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		ECD17773BB8E43124912A34287E96BC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81171A33E101DE2E81C20F54CA8EFBAD /* Foundation.framework */; };
@@ -548,12 +551,33 @@
 			remoteGlobalIDString = 8AC227E053859FE56C51EAD7F08E0DF6;
 			remoteInfo = GoogleToolboxForMac;
 		};
+		407CAC03766F147D9E365E66B5911768 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AC227E053859FE56C51EAD7F08E0DF6;
+			remoteInfo = GoogleToolboxForMac;
+		};
 		6028FA86D41E1EB64ECCB88ABA573C89 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FDF524E41C4C28FA84778F1F928EC768;
 			remoteInfo = SDWebImage;
+		};
+		68F152087976B70556E4892A8759F4D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
+		699C09BA3500D97A7F35DA735DA4E838 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA13F43D6505D2E9CF3BD4613C0387BD;
+			remoteInfo = FirebaseCore;
 		};
 		6F667A8A16E216A6F40C43515D893BF2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -562,6 +586,13 @@
 			remoteGlobalIDString = 721742C645EE1FC01C54A5232119A58C;
 			remoteInfo = SVProgressHUD;
 		};
+		75EB7695A20DC822D996118A49DCF0A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67E43B14CF7A2E9F7BE7BA54C4DF58BB;
+			remoteInfo = ReachabilitySwift;
+		};
 		7EB68E2648E45076A2388D96889490CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -569,7 +600,35 @@
 			remoteGlobalIDString = 4F5E7C621A9D556005E5298CB2CB14F2;
 			remoteInfo = "leveldb-library";
 		};
+		8D52E372F8109DFFF4D45FD59E375990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4DD95323C54A78F879DAB0F1508B8E7;
+			remoteInfo = nanopb;
+		};
 		9A3AC4F197C14D4382552A7FACA35E2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB4379515FDB39958A55CCCD068806BB;
+			remoteInfo = FirebaseDatabase;
+		};
+		9AE11199D0656BD3FF88CF01A2AC0DFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F5E7C621A9D556005E5298CB2CB14F2;
+			remoteInfo = "leveldb-library";
+		};
+		A2973A9E8A044D9EC2B4F7FA55CE6D96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDF524E41C4C28FA84778F1F928EC768;
+			remoteInfo = SDWebImage;
+		};
+		BD73DEC406E6549468CB587F72EF0389 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -589,6 +648,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 67E43B14CF7A2E9F7BE7BA54C4DF58BB;
 			remoteInfo = ReachabilitySwift;
+		};
+		CDE87535AB1542150DD999DC1DA3A31F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 721742C645EE1FC01C54A5232119A58C;
+			remoteInfo = SVProgressHUD;
 		};
 		DE4F34496D8977DCBA2BAC655EB282FA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -611,10 +677,10 @@
 		0113F4EE2EFF64F484F6BCFA4E0C97B1 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = CoreOnly/Sources/Firebase.h; sourceTree = "<group>"; };
 		0131BBCD2079F4D1FE3A00F0E79A819A /* FIRDatabaseConfig_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRDatabaseConfig_Private.h; path = Firebase/Database/FIRDatabaseConfig_Private.h; sourceTree = "<group>"; };
 		01EC401BC8FDEA739D8D299D139D4A02 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01F6F39E8D5F83AFD8B12C9029F0EBAC /* Pods-WeatherApp-WeatherAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherApp-WeatherAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		020ECFF4D53CC25B2E4A7AE02F511711 /* write_batch.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = write_batch.cc; path = db/write_batch.cc; sourceTree = "<group>"; };
 		0273BC3C994E224B540BB852B1D6FD22 /* FQuerySpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FQuerySpec.h; path = Firebase/Database/Core/FQuerySpec.h; sourceTree = "<group>"; };
 		02B4E1A061798FFA6C7290963B31048C /* FValueEventRegistration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FValueEventRegistration.h; path = Firebase/Database/Core/View/FValueEventRegistration.h; sourceTree = "<group>"; };
-		02CA2BB1C666F8EC5079A6BD0A3BB5AE /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = leveldb.framework; path = "leveldb-library.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0321300B18F3FF54C4CCF38B62BC983E /* FIRApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRApp.h; path = Firebase/Core/Public/FIRApp.h; sourceTree = "<group>"; };
 		03B018B2DEF8C33A5844AA326AB22B22 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
 		052997307ED45608042346C5B7F3C168 /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
@@ -628,8 +694,10 @@
 		09629332AA73B9F1C736673868C408D1 /* FLimitedFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLimitedFilter.h; path = Firebase/Database/Core/View/Filter/FLimitedFilter.h; sourceTree = "<group>"; };
 		0985DACC0CACAD5B2E0026F483217991 /* logging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = logging.h; path = util/logging.h; sourceTree = "<group>"; };
 		0AAB4011A4720A2CA484E67DB293F3DF /* FIRDatabaseQuery_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRDatabaseQuery_Private.h; path = Firebase/Database/Api/Private/FIRDatabaseQuery_Private.h; sourceTree = "<group>"; };
+		0CC0EDBDFD64AA171C0D5B83CB4A88CC /* Pods-WeatherApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeatherApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		0E0D46DA895EAE4F5EBFDD2B078FDD20 /* FQueryParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FQueryParams.h; path = Firebase/Database/Core/FQueryParams.h; sourceTree = "<group>"; };
 		0F309DF5C25166131B18519759C84CB3 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		10869AFAEB0598AEAD366476E700CED9 /* Pods-WeatherApp-WeatherAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeatherApp-WeatherAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1129DCB314CE6DCB8F71BB2D4F6D067C /* env.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = env.h; path = include/leveldb/env.h; sourceTree = "<group>"; };
 		1148712D13683C38C8F76471610E0B95 /* FListenProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FListenProvider.m; path = Firebase/Database/Core/FListenProvider.m; sourceTree = "<group>"; };
 		121C5ACA1C2FE922B97E61EDF4A1AD3B /* FSyncPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSyncPoint.h; path = Firebase/Database/Core/FSyncPoint.h; sourceTree = "<group>"; };
@@ -641,13 +709,13 @@
 		14BA85F3F28076DCFB0CEEB26F15D4D2 /* FStringUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FStringUtilities.h; path = Firebase/Database/Utilities/FStringUtilities.h; sourceTree = "<group>"; };
 		15218B1986A20A0FDC42FFA85FB5B447 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		15C39A406C29757DBC4742C771B31241 /* UIImage+ForceDecode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ForceDecode.m"; path = "SDWebImage/UIImage+ForceDecode.m"; sourceTree = "<group>"; };
+		15DFA723551D4B0708DC3B118E331B76 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		15F7ED412DE846D2F51A7BCE722575D4 /* FTupleBoolBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTupleBoolBlock.m; path = Firebase/Database/Utilities/Tuples/FTupleBoolBlock.m; sourceTree = "<group>"; };
 		163BA4FFABBEC9AC6573B5BEC7E13B9C /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
 		1681F717D5A5CB435E161B0EB1E8830E /* FImmutableSortedDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FImmutableSortedDictionary.m; path = Firebase/Database/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FImmutableSortedDictionary.m; sourceTree = "<group>"; };
 		16920DBA85FB5DDDB6716DD968C52E4C /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		1698F6F75CAC56BF293F6DB92C2B9DD0 /* FIRNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRNetwork.h; path = Firebase/Core/Private/FIRNetwork.h; sourceTree = "<group>"; };
 		186EE8FC881CA80B98362083D4B448A2 /* FUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FUtilities.h; path = Firebase/Database/Utilities/FUtilities.h; sourceTree = "<group>"; };
-		18886651FC5B7480F2F443CA93F6AF50 /* Pods-WeatherApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WeatherApp-umbrella.h"; sourceTree = "<group>"; };
 		19090F4F2D040DDCFCD8C9BB12CF949A /* FEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FEvent.h; path = Firebase/Database/Core/View/FEvent.h; sourceTree = "<group>"; };
 		1A430C20DCAFE9DA6F53CE8B3D230E4C /* FIRDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRDatabase.m; path = Firebase/Database/Api/FIRDatabase.m; sourceTree = "<group>"; };
 		1A50C245FB490EEDD90BE4F9107DF238 /* FEventRegistration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FEventRegistration.h; path = Firebase/Database/Core/View/FEventRegistration.h; sourceTree = "<group>"; };
@@ -667,7 +735,6 @@
 		211829F1D8DE6E8DEF31270DD1670F11 /* FTransformedEnumerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTransformedEnumerator.h; path = Firebase/Database/FTransformedEnumerator.h; sourceTree = "<group>"; };
 		2121465C925AD78178F06F364D2E39D3 /* FValueIndex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FValueIndex.h; path = Firebase/Database/FValueIndex.h; sourceTree = "<group>"; };
 		215C40D353F842EF1ED0C21366907D74 /* dumpfile.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = dumpfile.cc; path = db/dumpfile.cc; sourceTree = "<group>"; };
-		21DF080F8E0627EC1C671C711F5F9B5F /* Pods-WeatherApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WeatherApp.modulemap"; sourceTree = "<group>"; };
 		21F40421738873725C9711AC008B6CB0 /* FConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FConnection.h; path = Firebase/Database/Realtime/FConnection.h; sourceTree = "<group>"; };
 		22107BEA69243AD574BB2FD4D0333964 /* FIndexedNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIndexedNode.h; path = Firebase/Database/Snapshot/FIndexedNode.h; sourceTree = "<group>"; };
 		222975423A19C5A6CEC153B85936C1F8 /* FTrackedQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTrackedQuery.m; path = Firebase/Database/Persistence/FTrackedQuery.m; sourceTree = "<group>"; };
@@ -675,6 +742,7 @@
 		227C6B872088411FD8A86359AF4B9D18 /* FChildEventRegistration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FChildEventRegistration.h; path = Firebase/Database/Core/View/FChildEventRegistration.h; sourceTree = "<group>"; };
 		248230A87A1B4FCF2D8FF90C959EE933 /* FLLRBValueNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLLRBValueNode.h; path = Firebase/Database/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FLLRBValueNode.h; sourceTree = "<group>"; };
 		24B4108F91CB9E1A8F5FF3F5D26A79B1 /* nanopb-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-umbrella.h"; sourceTree = "<group>"; };
+		24D87D813078E848BF647240EAA39F24 /* Pods-WeatherApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeatherApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		24FC06F2C95E0D76D5A24E676937752C /* FStringUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FStringUtilities.m; path = Firebase/Database/Utilities/FStringUtilities.m; sourceTree = "<group>"; };
 		2541E47C9EC8D1C9561982DCE609AB15 /* FTupleSetIdPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTupleSetIdPath.m; path = Firebase/Database/Utilities/Tuples/FTupleSetIdPath.m; sourceTree = "<group>"; };
 		25C6AB9ADDED57BBDD420FFCB2CFC0B5 /* FAuthTokenProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAuthTokenProvider.h; path = Firebase/Database/Login/FAuthTokenProvider.h; sourceTree = "<group>"; };
@@ -692,11 +760,9 @@
 		28A930A2BD6831A5E5D5791A650543DC /* FTreeNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTreeNode.m; path = Firebase/Database/Core/Utilities/FTreeNode.m; sourceTree = "<group>"; };
 		28C1AAFA5506C304CEC4A5134C7D96EA /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		28C84C6045E73D5A95F5A0590299FE6E /* block_builder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = block_builder.h; path = table/block_builder.h; sourceTree = "<group>"; };
-		298886DE02BDA4032AAD81D2741E2C62 /* Pods-WeatherApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeatherApp-frameworks.sh"; sourceTree = "<group>"; };
 		2A605C12FBAA427C8CF4B2111F12EF6B /* c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = c.h; path = include/leveldb/c.h; sourceTree = "<group>"; };
-		2AD21586615CBE574F49ABEA021C0B4A /* FirebaseDatabase.framework */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = FirebaseDatabase.framework; path = libFirebaseDatabase.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B0506FFDEA45957F72FED02AAA204B4 /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		2B07E07579F89D49C81E3378BEF51415 /* FIRReachabilityChecker+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FIRReachabilityChecker+Internal.h"; path = "Firebase/Core/Private/FIRReachabilityChecker+Internal.h"; sourceTree = "<group>"; };
+		2BA0F1678B5AACDF6D3E7D34D1671DAD /* Pods-WeatherApp-WeatherAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WeatherApp-WeatherAppTests-umbrella.h"; sourceTree = "<group>"; };
 		2BC13356A834AE983C57AE60C26B4D88 /* FDataEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FDataEvent.m; path = Firebase/Database/Core/View/FDataEvent.m; sourceTree = "<group>"; };
 		2BC78332143CC8A891A3F16E2B8A87BC /* FStorageEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FStorageEngine.h; path = Firebase/Database/Persistence/FStorageEngine.h; sourceTree = "<group>"; };
 		2C0B3671193D8606946A9F890A5B70DC /* pb_decode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_decode.h; sourceTree = "<group>"; };
@@ -742,6 +808,7 @@
 		3E00CDDA886919839F7F990100026E12 /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
 		3E6AB3FD71838F28BC24955813244249 /* FTypedefs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTypedefs.h; path = Firebase/Database/Utilities/FTypedefs.h; sourceTree = "<group>"; };
 		3ECCA3235647FCB319CB4F1F1D9268E8 /* FAtomicNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAtomicNumber.h; path = Firebase/Database/Utilities/FAtomicNumber.h; sourceTree = "<group>"; };
+		3FD9364DCDE0EBA98D3CF127845DD85E /* Pods_WeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WeatherApp.framework; path = "Pods-WeatherApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE9533BB9027E315A1056F51698BCC8 /* FPersistenceManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FPersistenceManager.m; path = Firebase/Database/Persistence/FPersistenceManager.m; sourceTree = "<group>"; };
 		406728D7CF0EC773C186592FC426D56A /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
 		408B9224796722C18875181A857C6C60 /* FIndexedFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIndexedFilter.m; path = Firebase/Database/Core/View/Filter/FIndexedFilter.m; sourceTree = "<group>"; };
@@ -757,10 +824,8 @@
 		446E67BA570B29D2A7CB95EBB88D15A6 /* FIndexedNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIndexedNode.m; path = Firebase/Database/Snapshot/FIndexedNode.m; sourceTree = "<group>"; };
 		44FF153B92B83D953C970BCB2EDA2402 /* crc32c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crc32c.h; path = util/crc32c.h; sourceTree = "<group>"; };
 		457736C14B8BA02B745A2E479438B13D /* FWriteRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FWriteRecord.m; path = Firebase/Database/Core/FWriteRecord.m; sourceTree = "<group>"; };
-		4821343172711C0E4B73EA16F5E0858C /* Pods-WeatherApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeatherApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		487DF2BA165DECB5B95BF72A7142DDF6 /* leveldb-library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "leveldb-library.xcconfig"; sourceTree = "<group>"; };
 		488FBCFBF927C41E24F395ECB6D9070C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48E4791E228C5588DC582AAE0C7CAFA4 /* Pods-WeatherApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeatherApp-dummy.m"; sourceTree = "<group>"; };
 		48F94229A386E133C23217652E98B651 /* FServerValues.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FServerValues.m; path = Firebase/Database/Core/FServerValues.m; sourceTree = "<group>"; };
 		493B816315D9AFDE0D4AD1E0F9DCECEC /* FPathIndex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FPathIndex.m; path = Firebase/Database/FPathIndex.m; sourceTree = "<group>"; };
 		49435DB81765808C8BAACD3EA8A536F8 /* FListenComplete.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FListenComplete.m; path = Firebase/Database/FListenComplete.m; sourceTree = "<group>"; };
@@ -772,6 +837,7 @@
 		4BDC9FCA3F1CE6D7BA118E4623039E31 /* FTupleFirebase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTupleFirebase.m; path = Firebase/Database/Utilities/Tuples/FTupleFirebase.m; sourceTree = "<group>"; };
 		4BE4288261292BD0ED18ECDCECE22915 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
 		4C43DDA9CC2A63293F41C545582F863F /* builder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = builder.h; path = db/builder.h; sourceTree = "<group>"; };
+		4C5AF4E0734CDAB43AB75AC8EEF91CDA /* Pods-WeatherApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WeatherApp-umbrella.h"; sourceTree = "<group>"; };
 		4C5DF035867390773AC8C6559013E572 /* env_posix.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = env_posix.cc; path = util/env_posix.cc; sourceTree = "<group>"; };
 		4D3493D65DF7B06D375C0C3F4A25EAD6 /* FCompoundHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FCompoundHash.h; path = Firebase/Database/Core/FCompoundHash.h; sourceTree = "<group>"; };
 		4D799D2371171DFC3D0819058CC821E1 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
@@ -784,7 +850,6 @@
 		515C07B5A640A5F5D00769D0739401DA /* FViewCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FViewCache.h; path = Firebase/Database/Core/View/FViewCache.h; sourceTree = "<group>"; };
 		519083F62E5D41FF55F255CC68304190 /* FImmutableSortedDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FImmutableSortedDictionary.h; path = Firebase/Database/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FImmutableSortedDictionary.h; sourceTree = "<group>"; };
 		520615789156A41D9610FDE349FBF50D /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		53490B4458168447E52631ADC7A37A53 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDWebImage.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		542B86254B39E26E34302D4464ADBE02 /* FTupleStringNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTupleStringNode.m; path = Firebase/Database/Utilities/Tuples/FTupleStringNode.m; sourceTree = "<group>"; };
 		54F2C8BC8814C299ED0A526B39582EC2 /* FIRDatabaseReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRDatabaseReference.m; path = Firebase/Database/FIRDatabaseReference.m; sourceTree = "<group>"; };
 		5585078FA7DBF1423D291B428A42DF5C /* FTrackedQueryManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTrackedQueryManager.h; path = Firebase/Database/Persistence/FTrackedQueryManager.h; sourceTree = "<group>"; };
@@ -793,7 +858,6 @@
 		575ED2AC6C6B0CB5F7027E4DC30CDA24 /* FIRErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRErrors.h; path = Firebase/Core/Private/FIRErrors.h; sourceTree = "<group>"; };
 		5946889FEA1351E9F99F49F89D36EEC4 /* fbase64.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fbase64.c; path = Firebase/Database/third_party/SocketRocket/fbase64.c; sourceTree = "<group>"; };
 		594D26C1F6667B150BC4CF12FB54B41C /* SDImageCacheConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheConfig.m; path = SDWebImage/SDImageCacheConfig.m; sourceTree = "<group>"; };
-		597F7FD04323A1FDD9CB63D76E0E1968 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = FirebaseCore.framework; path = libFirebaseCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5980F4AF91573E6BBCD8FC36F2F5EAD7 /* FIRNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRNetwork.m; path = Firebase/Core/FIRNetwork.m; sourceTree = "<group>"; };
 		5A1AE5F15DA63E48E75BAD538D4710DF /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		5AC7E116DD12A1034F39AB1347A863B4 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
@@ -829,7 +893,6 @@
 		625690DBEFF66B7C1B54F3A3CEE98437 /* block.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = block.cc; path = table/block.cc; sourceTree = "<group>"; };
 		6271C116DEBA55A22172FE4EF66C85DB /* FIROptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIROptions.h; path = Firebase/Core/Public/FIROptions.h; sourceTree = "<group>"; };
 		62C4FD76AF2F00023EBB0B8EB8A8AE4A /* env_posix_test_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = env_posix_test_helper.h; path = util/env_posix_test_helper.h; sourceTree = "<group>"; };
-		63517E4747F5B0CFE2F865ED5702B8D9 /* Pods_WeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WeatherApp.framework; path = "Pods-WeatherApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6374A9DC8C7741F3419E21CA28351DF3 /* FIRAppAssociationRegistration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAppAssociationRegistration.m; path = Firebase/Core/FIRAppAssociationRegistration.m; sourceTree = "<group>"; };
 		6471C4B44E6E7F8BF27F643DE7BCD928 /* FLevelDBStorageEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLevelDBStorageEngine.m; path = Firebase/Database/Persistence/FLevelDBStorageEngine.m; sourceTree = "<group>"; };
 		650249CAFBA5429B6357C5F48C755D79 /* FLeafNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLeafNode.m; path = Firebase/Database/Snapshot/FLeafNode.m; sourceTree = "<group>"; };
@@ -853,13 +916,14 @@
 		6F7E84627E66AD01BD849C2D2A471329 /* ReachabilitySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReachabilitySwift-dummy.m"; sourceTree = "<group>"; };
 		6FF116DF84E889E115B29E3789DA6A40 /* format.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = format.h; path = table/format.h; sourceTree = "<group>"; };
 		7079B2D58137D95E3643C73501BF2992 /* FirebaseCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FirebaseCore.h; path = Firebase/Core/Public/FirebaseCore.h; sourceTree = "<group>"; };
-		70CC089B3FC4B1A6B612EB505A2736C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70D2DB73F84CF176BD255A0180878DA1 /* FIRNetworkConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRNetworkConstants.m; path = Firebase/Core/FIRNetworkConstants.m; sourceTree = "<group>"; };
 		70FEAA0A7020AB94C482CAC3986A520B /* FPruneForest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FPruneForest.h; path = Firebase/Database/Persistence/FPruneForest.h; sourceTree = "<group>"; };
+		715465DA33CA6BE9DC0EC8F899AD9F8C /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F6F3F471933E08245A1040D63977E9 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		74B743E2CF187656B40811F2AFFE3614 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
 		75F320071D08AEFC204B216C63077D60 /* db_iter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = db_iter.h; path = db/db_iter.h; sourceTree = "<group>"; };
 		76E8CB2752D41123331121FF0B8CD248 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		771E4B0CFFC1063F4CC489081D480E7B /* Pods-WeatherApp-WeatherAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeatherApp-WeatherAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7770E494478AF97A84A3CFF4DD12E972 /* filename.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = filename.cc; path = db/filename.cc; sourceTree = "<group>"; };
 		781C68E3516670F4439341AF7A2D9A67 /* UIImage+ForceDecode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ForceDecode.h"; path = "SDWebImage/UIImage+ForceDecode.h"; sourceTree = "<group>"; };
 		78225E54FD3C65E0E89F3741F2039325 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
@@ -875,21 +939,23 @@
 		7BB12B63374CE7332C1120FD55D86BC6 /* FCompleteChildSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FCompleteChildSource.h; path = Firebase/Database/Core/View/Filter/FCompleteChildSource.h; sourceTree = "<group>"; };
 		7BB3042D8E41E4BD1CBE09FF43876C3A /* FIRLoggerLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRLoggerLevel.h; path = Firebase/Core/Public/FIRLoggerLevel.h; sourceTree = "<group>"; };
 		7C01ADD178AA5A97CC4F372F879BE638 /* FIRServerValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRServerValue.m; path = Firebase/Database/Api/FIRServerValue.m; sourceTree = "<group>"; };
+		7DD1ADA7AC2AB1EA812DCD94B1DB2F41 /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = leveldb.framework; path = "leveldb-library.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE79BEBDADFBB0F2E501C4AB6F66B0F /* FIRNetworkURLSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRNetworkURLSession.h; path = Firebase/Core/Private/FIRNetworkURLSession.h; sourceTree = "<group>"; };
 		7DFAC73D1E6F0221A62B43EE15D8D2B0 /* env.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = env.cc; path = util/env.cc; sourceTree = "<group>"; };
 		7E069320213A60E7A99B9B4E8FAE2009 /* atomic_pointer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = atomic_pointer.h; path = port/atomic_pointer.h; sourceTree = "<group>"; };
 		7ECFEF030EAFCEB2BA1EA000CEA77D18 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
-		7F2AB7DB4CFCDED0BF5B5ED9D1E9B6EE /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EEB4DFECDE5715428EC100BE61956B2 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F72B5D2B10A55DBB11886AA665F9720 /* Pods-WeatherApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeatherApp-frameworks.sh"; sourceTree = "<group>"; };
 		807B7FA65FBE268A49586200514C3317 /* FTupleObjectNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTupleObjectNode.m; path = Firebase/Database/Utilities/Tuples/FTupleObjectNode.m; sourceTree = "<group>"; };
 		80862DAB63F4447FE88989407F69B9BD /* FWriteTree.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FWriteTree.m; path = Firebase/Database/Core/FWriteTree.m; sourceTree = "<group>"; };
 		81171A33E101DE2E81C20F54CA8EFBAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		815AEF073CFC10DCAF54747B97DC429A /* Pods-WeatherApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeatherApp-resources.sh"; sourceTree = "<group>"; };
 		8207E01466205437895A61EEBB433C89 /* FIRVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRVersion.m; path = Firebase/Core/FIRVersion.m; sourceTree = "<group>"; };
 		827206A895A42972C88404CF0BF905B6 /* merger.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = merger.cc; path = table/merger.cc; sourceTree = "<group>"; };
 		829076368FCC202D187FFEDA9757EA5E /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		837F47ED8763C98D29644FD5A0271426 /* FIRMutableDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRMutableDictionary.m; path = Firebase/Core/FIRMutableDictionary.m; sourceTree = "<group>"; };
 		84511C15AD5668453E3B417AB5AE2BE7 /* FSparseSnapshotTree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSparseSnapshotTree.h; path = Firebase/Database/Core/FSparseSnapshotTree.h; sourceTree = "<group>"; };
 		85CD1B9012F6A4FC6705F68BDCB763D0 /* FTupleCallbackStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTupleCallbackStatus.h; path = Firebase/Database/Utilities/Tuples/FTupleCallbackStatus.h; sourceTree = "<group>"; };
+		862156A2DAABDEC0472C2C3D0BF534AC /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDWebImage.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		862D5EB61DA21742244D6632646BBDDA /* FIRRetryHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRRetryHelper.m; path = Firebase/Database/Core/Utilities/FIRRetryHelper.m; sourceTree = "<group>"; };
 		86BB3A2CB6B0C26C0BD78D2FCA3EE363 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		884AD4CDD86E2CA8CD5915C45F8491F9 /* FIRNetworkURLSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRNetworkURLSession.m; path = Firebase/Core/FIRNetworkURLSession.m; sourceTree = "<group>"; };
@@ -903,7 +969,6 @@
 		8A54979797E32EBA9BDF89C6C5C1B3EF /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		8AF64AB9693B138CC2E51A57BC1E0E60 /* dbformat.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = dbformat.cc; path = db/dbformat.cc; sourceTree = "<group>"; };
 		8B15163CFA9B81830D869CE6304B2551 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
-		8B2E6CB601C9EAF197CCB5EAEB65F170 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2B42A96E78468E320D7F8C1D31E125 /* FListenComplete.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FListenComplete.h; path = Firebase/Database/FListenComplete.h; sourceTree = "<group>"; };
 		8C5B8D5E1D7E88C8B10B1E3B00A5DB02 /* APLevelDB.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = APLevelDB.mm; path = "Firebase/Database/third_party/Wrap-leveldb/APLevelDB.mm"; sourceTree = "<group>"; };
 		8C78650D13DE6C019FEDE5CA68581F92 /* FRangeMerge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FRangeMerge.m; path = Firebase/Database/Core/FRangeMerge.m; sourceTree = "<group>"; };
@@ -925,7 +990,7 @@
 		9099FEEB599A835F9BBB5BBB01CCF986 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		90D10BBD13328B3C2B571126236CC4D0 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
 		90F14630161C65A0554BF9BCBC73B2AD /* FQueryParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FQueryParams.m; path = Firebase/Database/Core/FQueryParams.m; sourceTree = "<group>"; };
-		90FB2C5E7E001D4C6AD225C0D78CDD72 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		912D66FBB486453BB7F435C0BF82A766 /* Pods-WeatherApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeatherApp-dummy.m"; sourceTree = "<group>"; };
 		9133F8640C027355E5592E39BDE45A57 /* FArraySortedDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FArraySortedDictionary.m; path = Firebase/Database/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FArraySortedDictionary.m; sourceTree = "<group>"; };
 		9139563EBBDAFFC95F9B3FA5E4CC50FD /* FirebaseDatabase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FirebaseDatabase-umbrella.h"; sourceTree = "<group>"; };
 		917EC8A81F3098901D0CE53F21B41698 /* db_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = db_impl.h; path = db/db_impl.h; sourceTree = "<group>"; };
@@ -937,8 +1002,8 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95220C43D2C1ED5CFB3F283BC25F3727 /* SDWebImageImageIOCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageImageIOCoder.m; path = SDWebImage/SDWebImageImageIOCoder.m; sourceTree = "<group>"; };
 		952ED4F7E1F2781849639BA06A5C719E /* FWriteTree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FWriteTree.h; path = Firebase/Database/Core/FWriteTree.h; sourceTree = "<group>"; };
-		97828B66218B25585F1E4649A2AFA66C /* Pods-WeatherApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeatherApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		97C47F244B2A74A0ECC56E36D3AF60CF /* FIRAnalyticsConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAnalyticsConfiguration.h; path = Firebase/Core/Public/FIRAnalyticsConfiguration.h; sourceTree = "<group>"; };
+		98EF704650398EEAD9A03338359710B4 /* Pods-WeatherApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeatherApp-resources.sh"; sourceTree = "<group>"; };
 		996F19ECA1CCADB22DCC21DDA083666C /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		99E5402804A420A2708AF2CBD8D74471 /* FirebaseCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FirebaseCore.xcconfig; sourceTree = "<group>"; };
 		9A1BE71BA0DF2B7983146FC83142B848 /* FParsedUrl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FParsedUrl.m; path = Firebase/Database/Utilities/FParsedUrl.m; sourceTree = "<group>"; };
@@ -950,6 +1015,7 @@
 		A02076D09B33A0F9387F933EDA330DA3 /* FRepo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FRepo.m; path = Firebase/Database/Core/FRepo.m; sourceTree = "<group>"; };
 		A08BEA285F667B41A87D66007DEF40F6 /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
 		A0C656F019C51654DE08C0B9F648C05F /* FViewProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FViewProcessor.m; path = Firebase/Database/FViewProcessor.m; sourceTree = "<group>"; };
+		A163FC66EF30919E8ACA87B45C5CADEA /* Pods-WeatherApp-WeatherAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherApp-WeatherAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		A17A3720821AF57B1B025EDA85B0F6BA /* FMerge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMerge.h; path = Firebase/Database/Core/Operation/FMerge.h; sourceTree = "<group>"; };
 		A2567676F6F9D6DF6A14EDDDA34CA6F3 /* FLeafNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLeafNode.h; path = Firebase/Database/Snapshot/FLeafNode.h; sourceTree = "<group>"; };
 		A37AB572A4623CED996123A21A6E7062 /* FCompoundWrite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FCompoundWrite.h; path = Firebase/Database/Snapshot/FCompoundWrite.h; sourceTree = "<group>"; };
@@ -979,7 +1045,9 @@
 		AC02C5833CF0482C3547C999FC98A640 /* merger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = merger.h; path = table/merger.h; sourceTree = "<group>"; };
 		ACE7DCC542906DE1A10DD182E5B04E8D /* crc32c.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = crc32c.cc; path = util/crc32c.cc; sourceTree = "<group>"; };
 		ACE906AA5AF60C5597C00304A86A26EB /* FIRErrorCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRErrorCode.h; path = Firebase/Core/Private/FIRErrorCode.h; sourceTree = "<group>"; };
+		ACFB68F1F79679985DFF320AE305D07F /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0E2FCA465F9156416EF457B8E3E6C8 /* FArraySortedDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FArraySortedDictionary.h; path = Firebase/Database/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FArraySortedDictionary.h; sourceTree = "<group>"; };
+		AEC3427E7D92DAF178027BDB27682F31 /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AF44113AAA4CE6CF5F38F921561F850B /* FPersistentConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FPersistentConnection.m; path = Firebase/Database/Core/FPersistentConnection.m; sourceTree = "<group>"; };
 		AF970411B9F5D0E00FEDF74467C30540 /* status.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = status.h; path = include/leveldb/status.h; sourceTree = "<group>"; };
 		B08ED6FD58A41B9B10E3C2EA4A925047 /* FirebaseDatabase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FirebaseDatabase.xcconfig; sourceTree = "<group>"; };
@@ -995,7 +1063,6 @@
 		B33ACAB1CAE61E9CF7E64F9BDD71955B /* FSRWebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSRWebSocket.m; path = Firebase/Database/third_party/SocketRocket/FSRWebSocket.m; sourceTree = "<group>"; };
 		B34FA194C30E934206B22C0F48758F61 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3723E4B3FAD189E676D56E4C25F04F6 /* FSyncPoint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSyncPoint.m; path = Firebase/Database/Core/FSyncPoint.m; sourceTree = "<group>"; };
-		B39C435EA039A993F80DE8F4EA7C6E38 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B428EA9A9704B4000E40A463C12851B0 /* APLevelDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APLevelDB.h; path = "Firebase/Database/third_party/Wrap-leveldb/APLevelDB.h"; sourceTree = "<group>"; };
 		B44E471874179F202FC1EBAE25A50A4D /* FLevelDBStorageEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLevelDBStorageEngine.h; path = Firebase/Database/Persistence/FLevelDBStorageEngine.h; sourceTree = "<group>"; };
 		B45AEBFE00B306736DF3CF589CDCA8BB /* db_impl.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = db_impl.cc; path = db/db_impl.cc; sourceTree = "<group>"; };
@@ -1007,7 +1074,7 @@
 		B7A7FA083B7B9560DEF6FA3CD1CCC051 /* port_posix.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = port_posix.cc; path = port/port_posix.cc; sourceTree = "<group>"; };
 		B7E0AC1B86436DEC84B9D3E6A9BEF4F8 /* FIndex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIndex.m; path = Firebase/Database/FIndex.m; sourceTree = "<group>"; };
 		B7F970C02C4B5A199ACE1A6815EB7361 /* FIndexedFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIndexedFilter.h; path = Firebase/Database/Core/View/Filter/FIndexedFilter.h; sourceTree = "<group>"; };
-		B8162A2625EE65CB9B5006CA4DB8ACF0 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
+		B8F807911057998B0E350F17ECFCB696 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9D3918961676CD26B8571015460EE6A /* FTupleCallbackStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTupleCallbackStatus.m; path = Firebase/Database/Utilities/Tuples/FTupleCallbackStatus.m; sourceTree = "<group>"; };
 		BA59B6261C9FC146974FD5F299C3C38D /* FTrackedQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTrackedQuery.h; path = Firebase/Database/Persistence/FTrackedQuery.h; sourceTree = "<group>"; };
 		BB3AD561335F15C2D530AE86C2A43B30 /* FIRDatabaseQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRDatabaseQuery.m; path = Firebase/Database/Api/FIRDatabaseQuery.m; sourceTree = "<group>"; };
@@ -1024,6 +1091,7 @@
 		C0D2812AB702FE7E9D9B329844E4B695 /* FTuplePathValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTuplePathValue.h; path = Firebase/Database/Utilities/Tuples/FTuplePathValue.h; sourceTree = "<group>"; };
 		C15D8FBA7E779270F97EBADA42FD141A /* SDWebImageCodersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCodersManager.m; path = SDWebImage/SDWebImageCodersManager.m; sourceTree = "<group>"; };
 		C1843CBDF65669AEA527AA303E024E69 /* filter_block.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = filter_block.cc; path = table/filter_block.cc; sourceTree = "<group>"; };
+		C1A501BF2E67B80A13F67FA5B1032437 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C221279AA0C3E6486EC05637681A2612 /* FEventRaiser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FEventRaiser.m; path = Firebase/Database/Core/View/FEventRaiser.m; sourceTree = "<group>"; };
 		C267C2390CEB39374652567852EE57D4 /* db_iter.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = db_iter.cc; path = db/db_iter.cc; sourceTree = "<group>"; };
 		C2B37A726A809B3A0A078C36F1BFE81F /* SDWebImageTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageTransition.h; path = SDWebImage/SDWebImageTransition.h; sourceTree = "<group>"; };
@@ -1033,6 +1101,8 @@
 		C388FDA13318ED975468AD96A0012D15 /* FTupleFirebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTupleFirebase.h; path = Firebase/Database/Utilities/Tuples/FTupleFirebase.h; sourceTree = "<group>"; };
 		C3B827A43C0A184165132C804DB2CD8C /* SDWebImageGIFCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageGIFCoder.m; path = SDWebImage/SDWebImageGIFCoder.m; sourceTree = "<group>"; };
 		C3D15AB728E9D29D0FA16E1976653C59 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		C3DD3BFB6BCDBBAF82A8FEE7024607B4 /* Pods-WeatherApp-WeatherAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeatherApp-WeatherAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		C3E9C2026490A37DEB31962D3EBC1488 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C416B40A51091EF77BE56E6F97E868E4 /* leveldb-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "leveldb-library-prefix.pch"; sourceTree = "<group>"; };
 		C4210722E942D443E2074D2BB795C0AC /* mutexlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mutexlock.h; path = util/mutexlock.h; sourceTree = "<group>"; };
 		C4920CF506B7B9A48A916D8CFFC664A6 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
@@ -1046,11 +1116,13 @@
 		C81011F2978243E50785BC7142178E17 /* two_level_iterator.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = two_level_iterator.cc; path = table/two_level_iterator.cc; sourceTree = "<group>"; };
 		C8141E4B4FA5E7EDB0E68DF4E867B85D /* SDWebImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SDWebImage.modulemap; sourceTree = "<group>"; };
 		C834B1E7E1B4BF8B8E252109682E41DA /* FIRDataEventType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRDataEventType.h; path = Firebase/Database/Public/FIRDataEventType.h; sourceTree = "<group>"; };
+		C99E168F5ACE18BD863D88BC10B9938C /* Pods-WeatherApp-WeatherAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeatherApp-WeatherAppTests-dummy.m"; sourceTree = "<group>"; };
 		C9E88D094A14051182AC18F93E4E1B00 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Frameworks/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
 		CA41EFC95ED953337649D9A7A03D9567 /* FOperationSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FOperationSource.h; path = Firebase/Database/Core/Operation/FOperationSource.h; sourceTree = "<group>"; };
 		CA9640167B54BB42BACB5DD251DF2F93 /* FViewCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FViewCache.m; path = Firebase/Database/Core/View/FViewCache.m; sourceTree = "<group>"; };
 		CC0B15291A278C821C939F5D7D741420 /* FChildChangeAccumulator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FChildChangeAccumulator.h; path = Firebase/Database/Core/View/Filter/FChildChangeAccumulator.h; sourceTree = "<group>"; };
 		CC15FC54636913B0DE1FAB09148B8476 /* cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cache.h; path = include/leveldb/cache.h; sourceTree = "<group>"; };
+		CCA7D49746F5B1CA4B498FCCE4B055DB /* Pods-WeatherApp-WeatherAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WeatherApp-WeatherAppTests.modulemap"; sourceTree = "<group>"; };
 		CD0BC66EE5CB4BC33CDFC3E2A95545E1 /* FIRApp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRApp.m; path = Firebase/Core/FIRApp.m; sourceTree = "<group>"; };
 		CD33DDBEECED16C890241B781EA30542 /* version_set.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = version_set.cc; path = db/version_set.cc; sourceTree = "<group>"; };
 		CD795ACEDE268900AC47D91E53B4C9C7 /* table.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = table.cc; path = table/table.cc; sourceTree = "<group>"; };
@@ -1068,6 +1140,7 @@
 		D45D33B79979B9FFE6F9B7465555FC56 /* pb_encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_encode.h; sourceTree = "<group>"; };
 		D4CDE8B7704F2EF02589F095153107BC /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
 		D52643E25FA92F9B750F538A67F28DC9 /* FQuerySpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FQuerySpec.m; path = Firebase/Database/Core/FQuerySpec.m; sourceTree = "<group>"; };
+		D5336B5F4C94B2452ECE048E6D57C0F4 /* Pods-WeatherApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WeatherApp.modulemap"; sourceTree = "<group>"; };
 		D6ACB7F74CC9DC2B0FC38F0D6F0280EA /* FSRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSRWebSocket.h; path = Firebase/Database/third_party/SocketRocket/FSRWebSocket.h; sourceTree = "<group>"; };
 		D6D9D377C8857AF8FEAA7B17684394D6 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
 		D779660087E3A1CBFEC8D86A6C26A6FF /* pb_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_common.h; sourceTree = "<group>"; };
@@ -1082,10 +1155,10 @@
 		DD9AF5FB3287FD1664C002671295C5DF /* testutil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = testutil.h; path = util/testutil.h; sourceTree = "<group>"; };
 		DDA1293E066F73198E375C01580C65D5 /* FConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FConnection.m; path = Firebase/Database/Realtime/FConnection.m; sourceTree = "<group>"; };
 		DE6AEA6E05D58588DA629A1642843556 /* FWebSocketConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FWebSocketConnection.m; path = Firebase/Database/Realtime/FWebSocketConnection.m; sourceTree = "<group>"; };
+		DF082F0B6DB778F20F58CBC5F39EA281 /* Pods_WeatherApp_WeatherAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WeatherApp_WeatherAppTests.framework; path = "Pods-WeatherApp-WeatherAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0FF8BA36FC99469EF22E1EBFB907FA /* FTree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTree.h; path = Firebase/Database/Core/Utilities/FTree.h; sourceTree = "<group>"; };
 		DF6275BB569E5878A6E3A59EB2E63271 /* FListenProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FListenProvider.h; path = Firebase/Database/Core/FListenProvider.h; sourceTree = "<group>"; };
 		DF6A298654D0F71659716DFA31EC8859 /* FirebaseDatabase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FirebaseDatabase-dummy.m"; sourceTree = "<group>"; };
-		DF9014902EC49EEC7A52B9C8B16F8561 /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reachability.framework; path = ReachabilitySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFEB3962B6491EFCB71D81D4972AD87E /* FMaxNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMaxNode.m; path = Firebase/Database/FMaxNode.m; sourceTree = "<group>"; };
 		DFFB099E47A317569EB4BF5F93BDBF86 /* filter_policy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = filter_policy.h; path = include/leveldb/filter_policy.h; sourceTree = "<group>"; };
 		E05A447F3612C43587976BAC5DD2DDE5 /* SDWebImageGIFCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageGIFCoder.h; path = SDWebImage/SDWebImageGIFCoder.h; sourceTree = "<group>"; };
@@ -1100,10 +1173,12 @@
 		E706E16A68642F376B1EED516177E9BE /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
 		E7D116F598E42D21AA06A3B5E42217A0 /* FIRServerValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRServerValue.h; path = Firebase/Database/Public/FIRServerValue.h; sourceTree = "<group>"; };
 		E855EE7F2CBB4860955AFBE0D101A97B /* FCacheNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FCacheNode.h; path = Firebase/Database/Core/View/FCacheNode.h; sourceTree = "<group>"; };
+		E8F53A5A7F6888499A2FA4B3C466E482 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = FirebaseDatabase.framework; path = libFirebaseDatabase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9725EDF4582DB39FCDE65C0B1350A5B /* histogram.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = histogram.cc; path = util/histogram.cc; sourceTree = "<group>"; };
 		E98EF55443C5AFFEDCBA01F6506CBA8E /* FWriteTreeRef.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FWriteTreeRef.m; path = Firebase/Database/Core/FWriteTreeRef.m; sourceTree = "<group>"; };
 		E9A6D5666A9E67DB69061B31242E46E2 /* FirebaseCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FirebaseCore-dummy.m"; sourceTree = "<group>"; };
 		EA01EDF905D74D985B470384D9ECB38F /* FSyncTree.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSyncTree.m; path = Firebase/Database/Core/FSyncTree.m; sourceTree = "<group>"; };
+		EA6E666602E532CBFD64339527700D0C /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reachability.framework; path = ReachabilitySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1B4BDE99B6469CE4E2194B09F616E0 /* FAckUserWrite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAckUserWrite.h; path = Firebase/Database/Core/Operation/FAckUserWrite.h; sourceTree = "<group>"; };
 		EBE63A9262CDAA2A0AEF70856C24F0D0 /* coding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = coding.h; path = util/coding.h; sourceTree = "<group>"; };
 		EBEE72ED588C3E7BC1CAADB27B435530 /* SDWebImageCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCoder.m; path = SDWebImage/SDWebImageCoder.m; sourceTree = "<group>"; };
@@ -1129,6 +1204,7 @@
 		F539EAD35B439A4E5422E6D24324CF5E /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		F5C451172687998C40E29F6394A62812 /* FUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FUtilities.m; path = Firebase/Database/Utilities/FUtilities.m; sourceTree = "<group>"; };
 		F61F51A3499D8A123C1E990EDC101A39 /* FIRRetryHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRRetryHelper.h; path = Firebase/Database/Core/Utilities/FIRRetryHelper.h; sourceTree = "<group>"; };
+		F676B2D42135C8125595DBB56A1B5CBC /* Pods-WeatherApp-WeatherAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeatherApp-WeatherAppTests-resources.sh"; sourceTree = "<group>"; };
 		F687BA62401E702B423668B07FE1B76F /* FIRMutableData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRMutableData.m; path = Firebase/Database/Api/FIRMutableData.m; sourceTree = "<group>"; };
 		F719B2130AA74F52DB2BE14E4901AC5E /* FIRDatabaseConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRDatabaseConfig.m; path = Firebase/Database/Api/FIRDatabaseConfig.m; sourceTree = "<group>"; };
 		F749702B9AB77412F58BA64E2E879054 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1154,6 +1230,7 @@
 		FE70D85AAAF0DAE9B1B3F07FE811CE3A /* FIRAnalyticsConfiguration+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FIRAnalyticsConfiguration+Internal.h"; path = "Firebase/Core/Private/FIRAnalyticsConfiguration+Internal.h"; sourceTree = "<group>"; };
 		FEBEED7B806B439CF1159FB58FFBD153 /* FIRDataSnapshot_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRDataSnapshot_Private.h; path = Firebase/Database/Api/Private/FIRDataSnapshot_Private.h; sourceTree = "<group>"; };
 		FEF6428CB439B9A6D3193ED261BCE42C /* FTupleSetIdPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTupleSetIdPath.h; path = Firebase/Database/Utilities/Tuples/FTupleSetIdPath.h; sourceTree = "<group>"; };
+		FFD67AD33EAFE2F0E64F2ECE4403F139 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = FirebaseCore.framework; path = libFirebaseCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF860A2D30B01D195E28AE308A15F54 /* FRangeMerge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FRangeMerge.h; path = Firebase/Database/Core/FRangeMerge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1166,6 +1243,14 @@
 				29A3756FF6C5CFFD3422395D640F408B /* Foundation.framework in Frameworks */,
 				755ADAAA66E8F455B2DD9F99017B7D54 /* Security.framework in Frameworks */,
 				A389E4564662B323AD29FAAE7A2A801B /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C51CE553A501D7825366E040A60D1B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C9BED620667585DF8B78E90711D5806 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1289,6 +1374,24 @@
 			);
 			name = Firebase;
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		24CF94C6B0DDF0A387D8485C3FBDF2CF /* Pods-WeatherApp */ = {
+			isa = PBXGroup;
+			children = (
+				B8F807911057998B0E350F17ECFCB696 /* Info.plist */,
+				D5336B5F4C94B2452ECE048E6D57C0F4 /* Pods-WeatherApp.modulemap */,
+				24D87D813078E848BF647240EAA39F24 /* Pods-WeatherApp-acknowledgements.markdown */,
+				0CC0EDBDFD64AA171C0D5B83CB4A88CC /* Pods-WeatherApp-acknowledgements.plist */,
+				912D66FBB486453BB7F435C0BF82A766 /* Pods-WeatherApp-dummy.m */,
+				7F72B5D2B10A55DBB11886AA665F9720 /* Pods-WeatherApp-frameworks.sh */,
+				98EF704650398EEAD9A03338359710B4 /* Pods-WeatherApp-resources.sh */,
+				4C5AF4E0734CDAB43AB75AC8EEF91CDA /* Pods-WeatherApp-umbrella.h */,
+				AEC3427E7D92DAF178027BDB27682F31 /* Pods-WeatherApp.debug.xcconfig */,
+				15DFA723551D4B0708DC3B118E331B76 /* Pods-WeatherApp.release.xcconfig */,
+			);
+			name = "Pods-WeatherApp";
+			path = "Target Support Files/Pods-WeatherApp";
 			sourceTree = "<group>";
 		};
 		2762B2880A93A2AD3035CCE3C6D75EDA /* Support Files */ = {
@@ -1423,6 +1526,24 @@
 			path = "../Target Support Files/leveldb-library";
 			sourceTree = "<group>";
 		};
+		4F68AF306305A6DDA4B4184618D3B5D2 /* Pods-WeatherApp-WeatherAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3E9C2026490A37DEB31962D3EBC1488 /* Info.plist */,
+				CCA7D49746F5B1CA4B498FCCE4B055DB /* Pods-WeatherApp-WeatherAppTests.modulemap */,
+				10869AFAEB0598AEAD366476E700CED9 /* Pods-WeatherApp-WeatherAppTests-acknowledgements.markdown */,
+				771E4B0CFFC1063F4CC489081D480E7B /* Pods-WeatherApp-WeatherAppTests-acknowledgements.plist */,
+				C99E168F5ACE18BD863D88BC10B9938C /* Pods-WeatherApp-WeatherAppTests-dummy.m */,
+				C3DD3BFB6BCDBBAF82A8FEE7024607B4 /* Pods-WeatherApp-WeatherAppTests-frameworks.sh */,
+				F676B2D42135C8125595DBB56A1B5CBC /* Pods-WeatherApp-WeatherAppTests-resources.sh */,
+				2BA0F1678B5AACDF6D3E7D34D1671DAD /* Pods-WeatherApp-WeatherAppTests-umbrella.h */,
+				01F6F39E8D5F83AFD8B12C9029F0EBAC /* Pods-WeatherApp-WeatherAppTests.debug.xcconfig */,
+				A163FC66EF30919E8ACA87B45C5CADEA /* Pods-WeatherApp-WeatherAppTests.release.xcconfig */,
+			);
+			name = "Pods-WeatherApp-WeatherAppTests";
+			path = "Target Support Files/Pods-WeatherApp-WeatherAppTests";
+			sourceTree = "<group>";
+		};
 		6D73E8968C02F3D4009609280A433F56 /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1466,8 +1587,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
 				F343B4E863C1DC0CEE54C6B686541372 /* Pods */,
-				FFD2E954DC867292F5FBAE72D7EA1A17 /* Products */,
-				DF22C6189AE83C235D15DCD608411604 /* Targets Support Files */,
+				8BBB62C952A24176397AD00167CC8AAF /* Products */,
+				F191DA676C5583B3CEA533D86C36EAB1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1491,22 +1612,22 @@
 			path = "../Target Support Files/FirebaseCore";
 			sourceTree = "<group>";
 		};
-		9460719BC261BD6E03214949A14123D1 /* Pods-WeatherApp */ = {
+		8BBB62C952A24176397AD00167CC8AAF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				70CC089B3FC4B1A6B612EB505A2736C0 /* Info.plist */,
-				21DF080F8E0627EC1C671C711F5F9B5F /* Pods-WeatherApp.modulemap */,
-				4821343172711C0E4B73EA16F5E0858C /* Pods-WeatherApp-acknowledgements.markdown */,
-				97828B66218B25585F1E4649A2AFA66C /* Pods-WeatherApp-acknowledgements.plist */,
-				48E4791E228C5588DC582AAE0C7CAFA4 /* Pods-WeatherApp-dummy.m */,
-				298886DE02BDA4032AAD81D2741E2C62 /* Pods-WeatherApp-frameworks.sh */,
-				815AEF073CFC10DCAF54747B97DC429A /* Pods-WeatherApp-resources.sh */,
-				18886651FC5B7480F2F443CA93F6AF50 /* Pods-WeatherApp-umbrella.h */,
-				2B0506FFDEA45957F72FED02AAA204B4 /* Pods-WeatherApp.debug.xcconfig */,
-				B8162A2625EE65CB9B5006CA4DB8ACF0 /* Pods-WeatherApp.release.xcconfig */,
+				715465DA33CA6BE9DC0EC8F899AD9F8C /* Alamofire.framework */,
+				FFD67AD33EAFE2F0E64F2ECE4403F139 /* FirebaseCore.framework */,
+				E8F53A5A7F6888499A2FA4B3C466E482 /* FirebaseDatabase.framework */,
+				ACFB68F1F79679985DFF320AE305D07F /* GoogleToolboxForMac.framework */,
+				7DD1ADA7AC2AB1EA812DCD94B1DB2F41 /* leveldb.framework */,
+				C1A501BF2E67B80A13F67FA5B1032437 /* nanopb.framework */,
+				3FD9364DCDE0EBA98D3CF127845DD85E /* Pods_WeatherApp.framework */,
+				DF082F0B6DB778F20F58CBC5F39EA281 /* Pods_WeatherApp_WeatherAppTests.framework */,
+				EA6E666602E532CBFD64339527700D0C /* Reachability.framework */,
+				862156A2DAABDEC0472C2C3D0BF534AC /* SDWebImage.framework */,
+				7EEB4DFECDE5715428EC100BE61956B2 /* SVProgressHUD.framework */,
 			);
-			name = "Pods-WeatherApp";
-			path = "Target Support Files/Pods-WeatherApp";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		94C5B5874F2042B08C05C0F2C6FCDCA0 /* Core */ = {
@@ -1902,14 +2023,6 @@
 			path = "../Target Support Files/ReachabilitySwift";
 			sourceTree = "<group>";
 		};
-		DF22C6189AE83C235D15DCD608411604 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9460719BC261BD6E03214949A14123D1 /* Pods-WeatherApp */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		E09D57AD1FC501D08A59F17EE14179B3 /* ReachabilitySwift */ = {
 			isa = PBXGroup;
 			children = (
@@ -2000,6 +2113,15 @@
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
+		F191DA676C5583B3CEA533D86C36EAB1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				24CF94C6B0DDF0A387D8485C3FBDF2CF /* Pods-WeatherApp */,
+				4F68AF306305A6DDA4B4184618D3B5D2 /* Pods-WeatherApp-WeatherAppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		F343B4E863C1DC0CEE54C6B686541372 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2079,23 +2201,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/nanopb";
-			sourceTree = "<group>";
-		};
-		FFD2E954DC867292F5FBAE72D7EA1A17 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B39C435EA039A993F80DE8F4EA7C6E38 /* Alamofire.framework */,
-				597F7FD04323A1FDD9CB63D76E0E1968 /* FirebaseCore.framework */,
-				2AD21586615CBE574F49ABEA021C0B4A /* FirebaseDatabase.framework */,
-				8B2E6CB601C9EAF197CCB5EAEB65F170 /* GoogleToolboxForMac.framework */,
-				02CA2BB1C666F8EC5079A6BD0A3BB5AE /* leveldb.framework */,
-				7F2AB7DB4CFCDED0BF5B5ED9D1E9B6EE /* nanopb.framework */,
-				63517E4747F5B0CFE2F865ED5702B8D9 /* Pods_WeatherApp.framework */,
-				DF9014902EC49EEC7A52B9C8B16F8561 /* Reachability.framework */,
-				53490B4458168447E52631ADC7A37A53 /* SDWebImage.framework */,
-				90FB2C5E7E001D4C6AD225C0D78CDD72 /* SVProgressHUD.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		FFEA329198D9CFA7623F34ACE68906E0 /* Support Files */ = {
@@ -2432,6 +2537,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA64728574392C517ED4F6757ABDD5E2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32CA5CC84F3673C2D84440CAFEACF76A /* Pods-WeatherApp-WeatherAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAD8367AD8AD11D49C84FD51195E78C6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2457,7 +2570,33 @@
 			);
 			name = "leveldb-library";
 			productName = "leveldb-library";
-			productReference = 02CA2BB1C666F8EC5079A6BD0A3BB5AE /* leveldb.framework */;
+			productReference = 7DD1ADA7AC2AB1EA812DCD94B1DB2F41 /* leveldb.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5B17AE49BB7E4FD5CA25932A9ABD4C47 /* Pods-WeatherApp-WeatherAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95E1156D923EAB8DA071F9F920530555 /* Build configuration list for PBXNativeTarget "Pods-WeatherApp-WeatherAppTests" */;
+			buildPhases = (
+				E307CC215CDAF89B70773DA54D31DC12 /* Sources */,
+				4C51CE553A501D7825366E040A60D1B1 /* Frameworks */,
+				FA64728574392C517ED4F6757ABDD5E2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABA39636CEAA6F210B4B2868923F434F /* PBXTargetDependency */,
+				CB7409EFEA79B210F9DAB0F31F33FCFA /* PBXTargetDependency */,
+				BF91DA99581B75F98BBBA40C376867ED /* PBXTargetDependency */,
+				4A76DF42911F7AEC7BD6120BC237FD14 /* PBXTargetDependency */,
+				EACB334798C1ADAFC9A9A2E2F1AD3011 /* PBXTargetDependency */,
+				B93C975DFB31520A638636234A504AAB /* PBXTargetDependency */,
+				A60A7807117F06DE6E9F4D18DA4DD345 /* PBXTargetDependency */,
+				2AE5B37C0355704189DA4FB40A2A4AC0 /* PBXTargetDependency */,
+				E3B929FA8EB006E20CD85F4F9B9DA2BB /* PBXTargetDependency */,
+			);
+			name = "Pods-WeatherApp-WeatherAppTests";
+			productName = "Pods-WeatherApp-WeatherAppTests";
+			productReference = DF082F0B6DB778F20F58CBC5F39EA281 /* Pods_WeatherApp_WeatherAppTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		67E43B14CF7A2E9F7BE7BA54C4DF58BB /* ReachabilitySwift */ = {
@@ -2474,7 +2613,7 @@
 			);
 			name = ReachabilitySwift;
 			productName = ReachabilitySwift;
-			productReference = DF9014902EC49EEC7A52B9C8B16F8561 /* Reachability.framework */;
+			productReference = EA6E666602E532CBFD64339527700D0C /* Reachability.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		721742C645EE1FC01C54A5232119A58C /* SVProgressHUD */ = {
@@ -2492,7 +2631,7 @@
 			);
 			name = SVProgressHUD;
 			productName = SVProgressHUD;
-			productReference = 90FB2C5E7E001D4C6AD225C0D78CDD72 /* SVProgressHUD.framework */;
+			productReference = 7EEB4DFECDE5715428EC100BE61956B2 /* SVProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -2509,7 +2648,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = B39C435EA039A993F80DE8F4EA7C6E38 /* Alamofire.framework */;
+			productReference = 715465DA33CA6BE9DC0EC8F899AD9F8C /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8AC227E053859FE56C51EAD7F08E0DF6 /* GoogleToolboxForMac */ = {
@@ -2526,7 +2665,7 @@
 			);
 			name = GoogleToolboxForMac;
 			productName = GoogleToolboxForMac;
-			productReference = 8B2E6CB601C9EAF197CCB5EAEB65F170 /* GoogleToolboxForMac.framework */;
+			productReference = ACFB68F1F79679985DFF320AE305D07F /* GoogleToolboxForMac.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A41B2B115B187D72F3431656EEB69E52 /* Pods-WeatherApp */ = {
@@ -2552,7 +2691,7 @@
 			);
 			name = "Pods-WeatherApp";
 			productName = "Pods-WeatherApp";
-			productReference = 63517E4747F5B0CFE2F865ED5702B8D9 /* Pods_WeatherApp.framework */;
+			productReference = 3FD9364DCDE0EBA98D3CF127845DD85E /* Pods_WeatherApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DB4379515FDB39958A55CCCD068806BB /* FirebaseDatabase */ = {
@@ -2573,7 +2712,7 @@
 			);
 			name = FirebaseDatabase;
 			productName = FirebaseDatabase;
-			productReference = 2AD21586615CBE574F49ABEA021C0B4A /* FirebaseDatabase.framework */;
+			productReference = E8F53A5A7F6888499A2FA4B3C466E482 /* FirebaseDatabase.framework */;
 			productType = "com.apple.product-type.library.static";
 		};
 		E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */ = {
@@ -2590,7 +2729,7 @@
 			);
 			name = nanopb;
 			productName = nanopb;
-			productReference = 7F2AB7DB4CFCDED0BF5B5ED9D1E9B6EE /* nanopb.framework */;
+			productReference = C1A501BF2E67B80A13F67FA5B1032437 /* nanopb.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EA13F43D6505D2E9CF3BD4613C0387BD /* FirebaseCore */ = {
@@ -2609,7 +2748,7 @@
 			);
 			name = FirebaseCore;
 			productName = FirebaseCore;
-			productReference = 597F7FD04323A1FDD9CB63D76E0E1968 /* FirebaseCore.framework */;
+			productReference = FFD67AD33EAFE2F0E64F2ECE4403F139 /* FirebaseCore.framework */;
 			productType = "com.apple.product-type.library.static";
 		};
 		FDF524E41C4C28FA84778F1F928EC768 /* SDWebImage */ = {
@@ -2626,7 +2765,7 @@
 			);
 			name = SDWebImage;
 			productName = SDWebImage;
-			productReference = 53490B4458168447E52631ADC7A37A53 /* SDWebImage.framework */;
+			productReference = 862156A2DAABDEC0472C2C3D0BF534AC /* SDWebImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -2646,7 +2785,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FFD2E954DC867292F5FBAE72D7EA1A17 /* Products */;
+			productRefGroup = 8BBB62C952A24176397AD00167CC8AAF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -2657,6 +2796,7 @@
 				4F5E7C621A9D556005E5298CB2CB14F2 /* leveldb-library */,
 				E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */,
 				A41B2B115B187D72F3431656EEB69E52 /* Pods-WeatherApp */,
+				5B17AE49BB7E4FD5CA25932A9ABD4C47 /* Pods-WeatherApp-WeatherAppTests */,
 				67E43B14CF7A2E9F7BE7BA54C4DF58BB /* ReachabilitySwift */,
 				FDF524E41C4C28FA84778F1F928EC768 /* SDWebImage */,
 				721742C645EE1FC01C54A5232119A58C /* SVProgressHUD */,
@@ -3001,6 +3141,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E307CC215CDAF89B70773DA54D31DC12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310F96408CF15C26465484E27116A41B /* Pods-WeatherApp-WeatherAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F25F2872D486B1F082A7DA70D3C1A270 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3012,6 +3160,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2AE5B37C0355704189DA4FB40A2A4AC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "leveldb-library";
+			target = 4F5E7C621A9D556005E5298CB2CB14F2 /* leveldb-library */;
+			targetProxy = 9AE11199D0656BD3FF88CF01A2AC0DFF /* PBXContainerItemProxy */;
+		};
 		38E6C192DCA6CC7A2BFBD13F43BB9811 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
@@ -3023,6 +3177,12 @@
 			name = "leveldb-library";
 			target = 4F5E7C621A9D556005E5298CB2CB14F2 /* leveldb-library */;
 			targetProxy = 7EB68E2648E45076A2388D96889490CF /* PBXContainerItemProxy */;
+		};
+		4A76DF42911F7AEC7BD6120BC237FD14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleToolboxForMac;
+			target = 8AC227E053859FE56C51EAD7F08E0DF6 /* GoogleToolboxForMac */;
+			targetProxy = 407CAC03766F147D9E365E66B5911768 /* PBXContainerItemProxy */;
 		};
 		5176C469B6F48481F985E4C9C8608293 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3066,11 +3226,53 @@
 			target = 4F5E7C621A9D556005E5298CB2CB14F2 /* leveldb-library */;
 			targetProxy = 31E43C811A947F099373C47E6FC50AAD /* PBXContainerItemProxy */;
 		};
+		A60A7807117F06DE6E9F4D18DA4DD345 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 721742C645EE1FC01C54A5232119A58C /* SVProgressHUD */;
+			targetProxy = CDE87535AB1542150DD999DC1DA3A31F /* PBXContainerItemProxy */;
+		};
+		ABA39636CEAA6F210B4B2868923F434F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = 68F152087976B70556E4892A8759F4D4 /* PBXContainerItemProxy */;
+		};
 		B1ADC59860448DC3053657B39613CD08 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FirebaseDatabase;
 			target = DB4379515FDB39958A55CCCD068806BB /* FirebaseDatabase */;
 			targetProxy = 9A3AC4F197C14D4382552A7FACA35E2F /* PBXContainerItemProxy */;
+		};
+		B93C975DFB31520A638636234A504AAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDWebImage;
+			target = FDF524E41C4C28FA84778F1F928EC768 /* SDWebImage */;
+			targetProxy = A2973A9E8A044D9EC2B4F7FA55CE6D96 /* PBXContainerItemProxy */;
+		};
+		BF91DA99581B75F98BBBA40C376867ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FirebaseDatabase;
+			target = DB4379515FDB39958A55CCCD068806BB /* FirebaseDatabase */;
+			targetProxy = BD73DEC406E6549468CB587F72EF0389 /* PBXContainerItemProxy */;
+		};
+		CB7409EFEA79B210F9DAB0F31F33FCFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FirebaseCore;
+			target = EA13F43D6505D2E9CF3BD4613C0387BD /* FirebaseCore */;
+			targetProxy = 699C09BA3500D97A7F35DA735DA4E838 /* PBXContainerItemProxy */;
+		};
+		E3B929FA8EB006E20CD85F4F9B9DA2BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = nanopb;
+			target = E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */;
+			targetProxy = 8D52E372F8109DFFF4D45FD59E375990 /* PBXContainerItemProxy */;
+		};
+		EACB334798C1ADAFC9A9A2E2F1AD3011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReachabilitySwift;
+			target = 67E43B14CF7A2E9F7BE7BA54C4DF58BB /* ReachabilitySwift */;
+			targetProxy = 75EB7695A20DC822D996118A49DCF0A4 /* PBXContainerItemProxy */;
 		};
 		F8A7D300B1C85E020A1D0C879B149610 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3419,7 +3621,7 @@
 		};
 		60FEC0B9F23CAFAEC26D24341D7BE280 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B0506FFDEA45957F72FED02AAA204B4 /* Pods-WeatherApp.debug.xcconfig */;
+			baseConfigurationReference = AEC3427E7D92DAF178027BDB27682F31 /* Pods-WeatherApp.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -3512,9 +3714,44 @@
 			};
 			name = Debug;
 		};
+		A092C319BD3693C75726C7829C1E68EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A163FC66EF30919E8ACA87B45C5CADEA /* Pods-WeatherApp-WeatherAppTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WeatherApp-WeatherAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WeatherApp-WeatherAppTests/Pods-WeatherApp-WeatherAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WeatherApp_WeatherAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		A2E1A3401828F2594D8E78FC6FCF5670 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8162A2625EE65CB9B5006CA4DB8ACF0 /* Pods-WeatherApp.release.xcconfig */;
+			baseConfigurationReference = 15DFA723551D4B0708DC3B118E331B76 /* Pods-WeatherApp.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -3752,6 +3989,41 @@
 			};
 			name = Release;
 		};
+		D1DF3443A9209F0E10CEC35270DF33D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01F6F39E8D5F83AFD8B12C9029F0EBAC /* Pods-WeatherApp-WeatherAppTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WeatherApp-WeatherAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WeatherApp-WeatherAppTests/Pods-WeatherApp-WeatherAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WeatherApp_WeatherAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		EF77BFE9B9C5E072ACFFCDBA55525CE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 487DF2BA165DECB5B95BF72A7142DDF6 /* leveldb-library.xcconfig */;
@@ -3867,6 +4139,15 @@
 			buildConfigurations = (
 				EF77BFE9B9C5E072ACFFCDBA55525CE0 /* Debug */,
 				23EC88FEA7C1AB82174F98F37033D904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95E1156D923EAB8DA071F9F920530555 /* Build configuration list for PBXNativeTarget "Pods-WeatherApp-WeatherAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1DF3443A9209F0E10CEC35270DF33D9 /* Debug */,
+				A092C319BD3693C75726C7829C1E68EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

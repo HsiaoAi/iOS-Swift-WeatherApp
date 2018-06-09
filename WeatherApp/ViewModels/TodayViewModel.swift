@@ -114,7 +114,7 @@ class TodayViewModel: NSObject {
         isGetLocation = true
         isLoading = true
         
-        weatherManager.fetchCurrentWeather(with: location) { (isSucess, weather, error) in
+        weatherManager.fetchCurrentWeather() { (isSucess, weather, error) in
             self.isLoading = false
             guard error == nil else {
                 if let fetchError = error! as? FecthWeatherError {
