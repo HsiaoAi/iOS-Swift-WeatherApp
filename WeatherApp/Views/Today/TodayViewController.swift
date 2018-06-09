@@ -43,6 +43,7 @@ class TodayViewController: UIViewController {
     // MARK : Set Up
     func setUpView() {
         title = TabBarItemType.today.title
+        shareButton.accessibilityIdentifier = "Share"
         
         let imageTintColor = UIColor.Custom.weatherIconDayColor
         _ = weatherIconImageViews.map { $0.tintColor = imageTintColor }

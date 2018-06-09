@@ -50,12 +50,14 @@ extension TabBarController {
             let todayViewController = load(TodayViewController.self, from: .today)
             let navigationController = ColorfulNavigationController(rootViewController: todayViewController)
             navigationController.tabBarItem = TabBarItem(itemType: itemType)
+            navigationController.tabBarItem.accessibilityIdentifier = "TabBarItem" + itemType.title
             return navigationController
         
         case .forecast:
             let forecastViewController = load(ForecastViewController.self, from: .forecast)
             let navigationController = ColorfulNavigationController(rootViewController: forecastViewController)
             navigationController.tabBarItem = TabBarItem(itemType: itemType)
+            navigationController.tabBarItem.accessibilityIdentifier = "TabBarItem" + itemType.title
             return navigationController
         
         }

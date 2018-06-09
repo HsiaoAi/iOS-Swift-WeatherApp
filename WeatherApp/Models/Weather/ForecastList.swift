@@ -54,11 +54,32 @@ struct ForecastListsModel {
             sectionTitles.append(weedays[index])
         }
         sectionTitles[0] = "TODAY"
-        print(sectionTitles)
         self.weedaySectionTiltes = sectionTitles
-        let hour = lround(Double(Calendar.current.component(.hour, from: Date())) / 3.0)
         
-        self.todayListCount = (8 - hour)
+        var todayCount = 0
+        if let firstPt = lists.first?.time {
+            switch firstPt {
+            case "02:00":
+                todayCount = 8
+            case "05:00":
+                todayCount = 7
+            case "08:00":
+                todayCount = 6
+            case "11:00":
+                todayCount = 5
+            case "14:00":
+                todayCount = 4
+            case "17:00":
+                todayCount = 3
+            case "20:00":
+                todayCount = 2
+            case "23:00":
+                todayCount = 1
+            default:
+                break
+            }
+        }
+        self.todayListCount = todayCount
     }
 }
 
