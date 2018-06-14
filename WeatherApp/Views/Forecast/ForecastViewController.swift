@@ -105,7 +105,9 @@ class ForecastViewController: UIViewController {
 
 extension ForecastViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return viewModel.forecastListModel?.weedaySectionTiltes.count ?? 0
+        let count = viewModel.forecastListModel?.weedaySectionTiltes.count ?? 0
+        self.tableView.isHidden = (count == 0)
+        return count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -155,7 +157,7 @@ extension ForecastViewController: UITableViewDelegate, UITableViewDataSource {
 extension ForecastViewController {
     
     @objc func tapReload() {
-        print("reolad")
+        viewModel.fetchForecast()
     }
     
     @objc func goToSettings() {
